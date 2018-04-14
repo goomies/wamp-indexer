@@ -18,17 +18,17 @@ This script was made to aid the process of migrating PHP and MySQL based website
 ![Image of Yaktocat](http://goomie.fr/img/screen.png)
 
 ## Installation
-1. Donwload and copy the folder `_wampindexer-grenadines` in `www`
-2. Export `index.php` present in `_wampindexer-grenadines` to `www`
+1. Donwload and copy the folder `_wampindexer` in `www`
+2. Export `index.php` present in `_wampindexer` to `www`
 3. Left click on wamp -> Apache -> Edite httpd.conf and replace the DirectoryIndex by :
-`DirectoryIndex  index.html  index.php  /_wampindexer-grenadines/public/index.php`
+`DirectoryIndex  index.html  index.php  /_wampindexer/public/index.php`
 4. Restart wamp and enjoy !
 
 ## Informations
 By default all of my git folder are named with the domain : `mydomain.com` cus i'm using it to test the serveur status online.
-If you work on a simple folder with subfolders inside `_h5ai` will take over the material theme.
+If you work on a simple folder with subfolders inside; `_h5ai` will take over the material theme.
 
 ## Default setup
-the ` _wampindexer-grenadines` folder is hidden with CSS in order to not be count and displayed as project .
+the ` _wampindexer` folder is hidden with CSS in order to not be count and displayed as project .
 The style modifications are in `_wampindexer\theme\css`.
-`style.css` is for your custom style and `app.min.1.css` contain the default design style use meterial theme.
+`style.css` is for your custom style and `app.min.1.css` or `app.min.2.css` contain the default design style use meterial theme.
