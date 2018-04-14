@@ -26,9 +26,9 @@ This script was made to aid the process of migrating PHP and MySQL based website
 
 ## Informations
 By default all of my git folder are named with the domain : `mydomain.com` cus i'm using it to test the serveur status online.
-If you work on a simple folder with subfolders inside `_h5ai` will take over the material theme.
+If you work on a simple folder with subfolders inside; `_h5ai` will take over the material theme.
 
 ## Default setup
 the ` _wampindexer` folder is hidden with CSS in order to not be count and displayed as project .
 The style modifications are in `_wampindexer\theme\css`.
-`style.css` is for your custom style and `app.min.1.css` contain the default design style use meterial theme.
+`style.css` is for your custom style and `app.min.1.css` or `app.min.2.css` contain the default design style use meterial theme.
