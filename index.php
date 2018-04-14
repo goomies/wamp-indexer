@@ -44,6 +44,12 @@
                     </a>
                     <ul class="dropdown-menu pull-right">
                         <li>
+                            <a href="https://www.messenger.com" target="_blank">
+                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <small>Messenger</small>
+                            </a>
+                        </li>
+                        <li>
                             <a href="https://mail.google.com/" target="_blank">
                                 <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Gmail</small>
