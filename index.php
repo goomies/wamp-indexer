@@ -1,9 +1,10 @@
+<?php require "_wampindexer/theme/script/wamp.php"; ?>
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>localhost</title>
+    <title>Wamp | localhost</title>
     <!-- Vendor CSS -->
     <link href="_wampindexer/theme/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
     <link href="_wampindexer/theme/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
@@ -139,7 +140,7 @@
                     <a data-toggle="dropdown" href=""><i class="hm-icon zmdi zmdi-more-vert"></i></a>
                     <ul class="dropdown-menu dm-icon pull-right">
                         <li>
-                            <a href="_wampindexer/replace" target="_blank"><i class="zmdi zmdi-swap"></i> Search & Replace DB</a>
+                            <a href="_wampindexer/search-replace-db" target="_blank"><i class="zmdi zmdi-swap"></i> Search & Replace DB</a>
                         </li>
                         <li>
                             <a href="phpmyadmin/" target="_blank"><i class="zmdi zmdi-dns"></i> phpMyAdmin</a>
@@ -167,57 +168,10 @@
             <section id="content">
                 <div class="container">
                     <div class="c-header">
-                        <h2><?php echo($_SERVER['SERVER_SIGNATURE']); ?></h2>
+                        <h2><?php echo $wampConfig; ?></h2>
                     </div>
                     <div class="row myGrid">
-                      <?php
-                      $folder             = opendir('.');
-                      $projectSites    = '';
-                      $projectsListIgnore = array ('.','..');
-
-                      while($file = readdir($folder)){
-
-                          if(is_dir($file) && !in_array($file, $projectsListIgnore)){
-
-                              // if($socket =@ fsockopen($file, 80, $errno, $errstr, 30)) {
-                              //     $status = '<div class="'.$file.' hideDiv">Online</div>';
-                              //     echo $status;
-                              // fclose($socket);
-                              // } else {
-                              //     $status = '<div class="'.$file.' hideDiv">Down</div>';
-                              //     echo $status;
-                              // }
-
-                              $screenshot = file_exists($file.'/screenshot.png') ? $file.'/screenshot.png' : $file;
-                              $readme = file_get_contents($file.'/README.md', true);
-                              $readmeDate = date("d.m.y", filectime($file));
-
-                              $projectSites  .= ' <div class="grid" id="'.$file.'">
-                                                      <div class="card animation-demo" id="titre">
-                                                          <div class="card-header">
-                                                              <h2><span><a href="/'.$file.'" target="_BLANK" class="project">'.$file.'</a></span></h2>
-                                                          </div>
-                                                          <a href="/'.$file.'" target="_BLANK">
-                                                              <div class="card-body">
-                                                                  <img src="'.$screenshot.'" alt="" class="animated">
-                                                              </div>
-                                                          </a>
-                                                          <div class="card-header">
-                                                              <h3><small>'.$readme.'</small></h3>
-                                                              <div class="row">
-                                                                  <div class="col-md-6 text-left"><p class="date">'.$readmeDate.'</p></div>
-                                                                  <div class="col-md-6 text-right"><a href="/'.$file.'" target="_BLANK" class="seeProject">local<span style="margin-right:7px;"></span><i class="zmdi zmdi-caret-right-circle zmdi-hc-fw blue"></i></a></div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>';
-
-                          }
-                      }
-                      closedir($folder);
-
-                      echo $projectSites;
-                      ?>
+                          <?php echo $repositories; ?>
                     </div>
                 </div>
             </section>
@@ -226,7 +180,6 @@
         <!-- Javascript Libraries -->
         <script src="_wampindexer/theme/vendors/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="_wampindexer/theme/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="_wampindexer/theme/vendors/sparklines/jquery.sparkline.min.js"></script>
         <script src="_wampindexer/theme/vendors/bower_components/Waves/dist/waves.min.js"></script>
         <script src="_wampindexer/theme/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="_wampindexer/theme/js/functions.js"></script>
