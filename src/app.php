@@ -4,11 +4,10 @@ $wampConfig = $_SERVER['SERVER_SIGNATURE'];
 
 $repository   = opendir('.');
 $repositories = '';
-$reposIgnore  = array ('.','..');
+$reposIgnore  = array('.','..');
 
-while($name = readdir($repository)){
-
-    if(is_dir($name) && !in_array($name, $reposIgnore)){
+while ($name = readdir($repository)) {
+    if (is_dir($name) && !in_array($name, $reposIgnore)) {
 
         // if($socket =@ fsockopen($name, 80, $errno, $errstr, 30)) {
         //     $status = '<div class="'.$name.' hideDiv">Online</div>';
@@ -42,7 +41,6 @@ while($name = readdir($repository)){
                                   </div>
                               </div>
                           </div>';
-
     }
 }
 closedir($repository);
