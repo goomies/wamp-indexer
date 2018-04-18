@@ -13,6 +13,10 @@ class ComposerStaticInitb329280d4902fed31acd0fbdae56f58a
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'WampIndexer\\' => 12,
+        ),
         'S' => 
         array (
             'Symfony\\Component\\Finder\\' => 25,
@@ -27,13 +31,13 @@ class ComposerStaticInitb329280d4902fed31acd0fbdae56f58a
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
-        'A' => 
-        array (
-            'Acme\\' => 5,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'WampIndexer\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
@@ -53,10 +57,6 @@ class ComposerStaticInitb329280d4902fed31acd0fbdae56f58a
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
-        ),
-        'Acme\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
