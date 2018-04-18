@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '\vendor\autoload.php';
+require __DIR__ . '\..\vendor\autoload.php';
 
 $wampConfig = $_SERVER['SERVER_SIGNATURE'];
 
