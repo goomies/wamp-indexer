@@ -10,9 +10,9 @@ a simple google material theme for the design inspiration
 This script was made to aid the process of migrating PHP and MySQL based websites. It has additional features for WordPress and Drupal but works for most other similar CMSes.
 
 # Template & dependencies for Data :
-- Title of project : name of folder from your git or local project inside `www`
+- Title of the repository : name of the folder from your git or local project inside `www`
 - Thumbnail : `screenshot.png` to put inside each project folder
-- Description : `README.md` from project folder git or other
+- Description : `README.md` from your git project folder or other
 
 ## Screenshot
 ![Image of Yaktocat](http://goomie.fr/img/screen.png)
