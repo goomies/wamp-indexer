@@ -1,6 +1,18 @@
 <?php
 require __DIR__ . '\..\vendor\autoload.php';
 
+use Symfony\Component\Finder\Finder;
+
+$finder = new Finder();
+$finder->directories();
+$finder->in(__DIR__.'\..\..')->exclude('_wampindexer');
+$finder->depth('== 0');
+
+foreach ($finder as $folder) {
+    // dumps the relative path to the file
+    $folderName = $folder->getRelativePathname();
+}
+
 $wampConfig = $_SERVER['SERVER_SIGNATURE'];
 
 $repository   = opendir('.');
@@ -9,15 +21,6 @@ $reposIgnore  = array('.','..');
 
 while ($name = readdir($repository)) {
     if (is_dir($name) && !in_array($name, $reposIgnore)) {
-        if ($socket =@ fsockopen($name, 80, $errno, $errstr, 30)) {
-            $status = '<div class="'.$name.' hideDiv">Online</div>';
-            echo $status;
-            fclose($socket);
-        } else {
-            $status = '<div class="'.$name.' hideDiv">Down</div>';
-            echo $status;
-        }
-
         $screenshot = file_exists($name.'/screenshot.png') ? $name.'/screenshot.png' : $name;
         $repositoryDate = date("d.m.y", filectime($name));
 

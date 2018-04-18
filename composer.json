@@ -1,5 +1,9 @@
 {
     "require": {
-        "symfony/finder": "^4.0"
+        "symfony/finder": "^4.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {"Acme\\": "src/"}
     }
 }
