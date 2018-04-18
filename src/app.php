@@ -9,15 +9,14 @@ $reposIgnore  = array('.','..');
 
 while ($name = readdir($repository)) {
     if (is_dir($name) && !in_array($name, $reposIgnore)) {
-
-        // if($socket =@ fsockopen($name, 80, $errno, $errstr, 30)) {
-        //     $status = '<div class="'.$name.' hideDiv">Online</div>';
-        //     echo $status;
-        // fclose($socket);
-        // } else {
-        //     $status = '<div class="'.$name.' hideDiv">Down</div>';
-        //     echo $status;
-        // }
+        if ($socket =@ fsockopen($name, 80, $errno, $errstr, 30)) {
+            $status = '<div class="'.$name.' hideDiv">Online</div>';
+            echo $status;
+            fclose($socket);
+        } else {
+            $status = '<div class="'.$name.' hideDiv">Down</div>';
+            echo $status;
+        }
 
         $screenshot = file_exists($name.'/screenshot.png') ? $name.'/screenshot.png' : $name;
         $repositoryDate = date("d.m.y", filectime($name));
