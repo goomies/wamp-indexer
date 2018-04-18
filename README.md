@@ -25,10 +25,12 @@ This script was made to aid the process of migrating PHP and MySQL based website
 4. Restart wamp and enjoy !
 
 ## Informations
-By default all of my git folder are named with the domain : `mydomain.com` cus i'm using it to test the serveur status online.
-If you work on a simple folder with subfolders inside; `_h5ai` will take over the material theme.
+By default all of my git folder are named with the domain : `mydomain.com` cus i'm using it to test the serveur status.
+If you work on a simple folder with subfolders inside; `_h5ai` will take over the _wampindexer theme.
 
 ## Default setup
-the ` _wampindexer` folder is hidden with CSS in order to not be count and displayed as project .
-The style modifications are in `_wampindexer\theme\css`.
-`style.css` is for your custom style and `app.min.1.css` or `app.min.2.css` contain the default design style use meterial theme.
+the ` _wampindexer` folder inside your `www` is hidden with CSS in order to not be count and displayed as a repository.
+- The profile picture modifications is in `_wampindexer\web\img\profil.png`.
+- The style modifications are in `_wampindexer\web\css\style.css`.
+- The Javascript modifications are in `_wampindexer\web\js\app.js`.
+- The Php modifications are in `_wampindexer\src\app.php`.
