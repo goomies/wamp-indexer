@@ -1075,6 +1075,17 @@ br {
     color: rgb(0, 187, 0);
 }
 
+.xdebug-var-dump {
+    position: relative;
+    z-index: 1000000000000000000000000;
+    width: 100%;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
 
 /* ====================================================================================
   6.0   |   MEDIA QUERIES
