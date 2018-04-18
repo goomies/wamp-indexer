@@ -30,7 +30,7 @@ If you work on a simple folder with subfolders inside; `_h5ai` will take over th
 
 ## Default setup
 the ` _wampindexer` folder inside your `www` is hidden with CSS in order to not be count and displayed as a repository.
-- The profile picture modifications is in `_wampindexer\web\img\profil.png`.
+- The profile picture modifications is in `_wampindexer\web\img\profile.png`.
 - The style modifications are in `_wampindexer\web\css\style.css`.
 - The Javascript modifications are in `_wampindexer\web\js\app.js`.
 - The Php modifications are in `_wampindexer\src\app.php`.
