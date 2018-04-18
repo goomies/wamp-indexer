@@ -10,8 +10,9 @@ Version: 1.0
 1.0 HTML BODY & GENERAL
 2.0 PAGE LOADER
 3.0 HEADER
-4.0 MEDIA QUERIES
-
+4.0 CONTAINER
+5.0 XDEBUG
+6.0 MEDIA QUERIES
 ==================================================================================== */
 
 
@@ -1016,7 +1017,67 @@ p.date {
 
 
 /* ====================================================================================
-  4.0   |   MEDIA QUERIES
+  5.0   |   XDEBUG
+==================================================================================== */
+br {
+    display: none;
+}
+.xdebug-error.xe-warning {
+    position: fixed;
+    z-index: 11;
+    width: 90%;
+    left: 5%;
+    bottom: 40px;
+    border: none;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.xdebug-error.xe-warning th, .xdebug-error.xe-warning td {
+    background-color: #000;
+    border: none;
+}
+
+.xdebug-error.xe-warning span {
+    display: none;
+}
+
+.xdebug-error.xe-warning tr:first-child th {
+    color: #E91E63;
+    padding: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+}
+
+.xdebug-error.xe-warning tr:nth-child(2) th {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.xdebug-error.xe-warning tr:nth-child(3) th{
+    color: #fff;
+}
+
+.xdebug-error.xe-warning tr:nth-child(3) th, .xdebug-error.xe-warning tr:nth-child(4) td, .xdebug-error.xe-warning tr:nth-child(5) td, .xdebug-error.xe-warning tr:nth-child(6) td  {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.xdebug-error.xe-warning tr:nth-child(6) td  {
+    padding-bottom: 25px;
+    border-radius: 15px;
+}
+
+.xdebug-error.xe-warning tr:nth-child(6) td a {
+    color: rgb(0, 187, 0);
+}
+
+
+/* ====================================================================================
+  6.0   |   MEDIA QUERIES
 ==================================================================================== */
 @media (max-width:500px) {
     .pull-right.h-menu, .pull-left.h-logo {

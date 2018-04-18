@@ -20,8 +20,13 @@ while ($name = readdir($repository)) {
         // }
 
         $screenshot = file_exists($name.'/screenshot.png') ? $name.'/screenshot.png' : $name;
-        $readme = file_get_contents($name.'/README.md', true);
-        $readmeDate = date("d.m.y", filectime($name));
+        $repositoryDate = date("d.m.y", filectime($name));
+
+        if (file_exists($name.'/README.md')) {
+            $readmeContent = file_get_contents($name.'/README.md', true);
+        } else {
+            $readmeContent = "No README.md find on your repository";
+        }
 
         $repositories  .= '<div class="grid" id="'.$name.'">
                               <div class="card animation-demo" id="titre">
@@ -34,9 +39,9 @@ while ($name = readdir($repository)) {
                                       </div>
                                   </a>
                                   <div class="card-header">
-                                      <h3><small>'.$readme.'</small></h3>
+                                      <h3><small>'.$readmeContent.'</small></h3>
                                       <div class="row">
-                                          <div class="col-md-6 text-left"><p class="date">'.$readmeDate.'</p></div>
+                                          <div class="col-md-6 text-left"><p class="date">'.$repositoryDate.'</p></div>
                                           <div class="col-md-6 text-right"><a href="/'.$name.'" target="_BLANK" class="seeProject">local<span style="margin-right:7px;"></span><i class="zmdi zmdi-caret-right-circle zmdi-hc-fw arrowLink"></i></a></div>
                                       </div>
                                   </div>
