@@ -53,7 +53,10 @@
                     <a data-toggle="dropdown" href="">
                         <i class="hm-icon zmdi zmdi-apps"></i>
                     </a>
-                    <ul class="dropdown-menu pull-right">
+
+                    <ul class="dropdown-menu wampindexMenu pull-right">
+                      <div class="gb_wb"></div>
+                      <div class="gb_vb"></div>
                         <li>
                             <a href="https://www.messenger.com" target="_blank">
                                 <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
@@ -151,7 +154,9 @@
                 <!-- [START] SUBMENU TOOLS -->
                 <li class="dropdown">
                     <a data-toggle="dropdown" href=""><i class="hm-icon zmdi zmdi-more-vert"></i></a>
-                    <ul class="dropdown-menu dm-icon pull-right">
+                    <ul class="dropdown-menu wampindexTools dm-icon pull-right">
+                        <div class="gb_wb"></div>
+                        <div class="gb_vb"></div>
                         <li>
                             <a href="_wampindexer/search-replace-db" target="_blank"><i class="zmdi zmdi-swap"></i> Search & Replace DB</a>
                         </li>

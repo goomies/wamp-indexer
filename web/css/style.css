@@ -616,8 +616,16 @@ svg:not(:root) {
 }
 
 .dropdown-menu.pull-right {
-    right: 0;
+    top: 55px;
     left: auto;
+}
+
+.dropdown-menu.wampindexMenu {
+    right: -120px;
+}
+
+.dropdown-menu.wampindexTools {
+    right: -65px;
 }
 
 .open > .dropdown-menu {
@@ -693,6 +701,10 @@ svg:not(:root) {
 
 .h-search {
     padding: 2px 30px 2px 0;
+}
+
+.hm-icon.zmdi.zmdi-search {
+    cursor: pointer !important;
 }
 
 .h-search, .hs-input, .hs-reset:before, .hs-reset:after {
@@ -967,8 +979,39 @@ p.date {
     display: block;
 }
 
-.seeProject:hover, .seeProject:focus, .seeProject:visited, .seeProject:active {
-    color: #000000;
+.gb_wb {
+    border-color: transparent;
+    border-style: dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    position: absolute;
+    left: 152px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    -webkit-animation: gb__a .2s;
+    animation: gb__a .2s;
+    border-bottom-color: #ccc;
+    border-bottom-color: rgba(0,0,0,.2);
+    top: -9px;
+}
+
+.wampindexTools .gb_wb, .wampindexTools .gb_vb {
+    left: 99px;
+}
+
+.gb_vb {
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-style: dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    position: absolute;
+    left: 152px;
+    top: -9px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    -webkit-animation: gb__a .2s;
+    animation: gb__a .2s;
 }
 
 
@@ -982,6 +1025,18 @@ p.date {
     }
     .pull-left.h-logo {
         margin-bottom: 35px;
+    }
+    .dropdown-menu.wampindexMenu {
+        right: -149px;
+    }
+    .dropdown-menu.wampindexTools {
+        right: -52px;
+    }
+    .gb_vb, .gb_wb {
+        left: 122px;
+    }
+    .wampindexTools .gb_wb, .wampindexTools .gb_vb {
+        left: 111px;
     }
 }
 
