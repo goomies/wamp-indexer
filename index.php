@@ -59,37 +59,37 @@
                       <div class="gb_vb"></div>
                         <li>
                             <a href="https://www.messenger.com" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-comments zmdi-hc-fw"></i>
                                 <small>Messenger</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://mail.google.com/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-email zmdi-hc-fw"></i>
                                 <small>Gmail</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://outlook.live.com/mail/#/inbox/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-account-box-mail zmdi-hc-fw"></i>
                                 <small>Outlook</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://calendar.google.com/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-calendar zmdi-hc-fw"></i>
                                 <small>Agenda</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://freedcamp.com/dashboard/home" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-coffee zmdi-hc-fw"></i>
                                 <small>FreedCamp</small>
                             </a>
                         </li>
                         <li>
                             <a href="http://devdocs.io/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-file-text zmdi-hc-fw"></i>
                                 <small>DevDocs</small>
                             </a>
                         </li>
@@ -101,49 +101,49 @@
                         </li>
                         <li>
                             <a href="https://www.ovh.com/auth/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-cloud-outline-alt zmdi-hc-fw"></i>
                                 <small>OVH</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://drive.google.com/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-google-drive zmdi-hc-fw"></i>
                                 <small>Drive</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://analytics.google.com/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-trending-up zmdi-hc-fw"></i>
                                 <small>Analytics</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.google.com/adsense" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-chart zmdi-hc-fw"></i>
                                 <small>Adsense</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-linkedin-box zmdi-hc-fw"></i>
                                 <small>Linkedin</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/RemyManescau/" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-facebook zmdi-hc-fw"></i>
                                 <small>Facebook</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://twitter.com/remymanescau" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-twitter zmdi-hc-fw"></i>
                                 <small>Twitter</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://plus.google.com/+R%C3%A9myManescau" target="_blank">
-                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-google-plus zmdi-hc-fw"></i>
                                 <small>Google +</small>
                             </a>
                         </li>
