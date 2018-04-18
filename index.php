@@ -168,7 +168,7 @@
                 <!-- [START] PROFIL IMG -->
                 <li class="dropdown hm-profile">
                     <a data-toggle="dropdown" href="">
-                        <img src="_wampindexer/web/img/goomie.jpg" alt="">
+                        <img src="_wampindexer/web/img/profile.png" alt="">
                     </a>
                 </li>
                 <!-- [END] PROFIL IMG -->
