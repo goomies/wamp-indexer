@@ -1,4 +1,5 @@
 <?php
+require "_wampindexer/vendor/autoload.php";
 
 $wampConfig = $_SERVER['SERVER_SIGNATURE'];
 
@@ -36,7 +37,7 @@ while ($name = readdir($repository)) {
                                       <h3><small>'.$readme.'</small></h3>
                                       <div class="row">
                                           <div class="col-md-6 text-left"><p class="date">'.$readmeDate.'</p></div>
-                                          <div class="col-md-6 text-right"><a href="/'.$name.'" target="_BLANK" class="seeProject">local<span style="margin-right:7px;"></span><i class="zmdi zmdi-caret-right-circle zmdi-hc-fw blue"></i></a></div>
+                                          <div class="col-md-6 text-right"><a href="/'.$name.'" target="_BLANK" class="seeProject">local<span style="margin-right:7px;"></span><i class="zmdi zmdi-caret-right-circle zmdi-hc-fw arrowLink"></i></a></div>
                                       </div>
                                   </div>
                               </div>

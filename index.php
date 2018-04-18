@@ -8,37 +8,47 @@
     <!-- Vendor CSS -->
     <link href="_wampindexer/web/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
     <link href="_wampindexer/web/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
-    <link href="_wampindexer/web/vendors/bower_components/google-material-color/dist/palette.css" rel="stylesheet">
-    <!-- theme CSS -->
-    <link href="_wampindexer/web/css/app.min.1.css" rel="stylesheet">
-    <link href="_wampindexer/web/css/app.min.2.css" rel="stylesheet">
-    <!-- CUSTOM CSS -->
+    <!-- Custom CSS -->
     <link href="_wampindexer/web/css/style.css" rel="stylesheet">
     <!-- FAVICON -->
     <link href="_wampindexer/web/img/favicon.ico" rel="icon"/>
 </head>
     <body data-ma-header="teal">
-        <!-- Page Loader -->
-        <div class="page-loader palette-Blue-300 bg">
+
+        <!-- [START] PAGE LOADER -->
+        <div class="page-loader bg">
             <div class="preloader pl-xl pls-white">
                 <svg class="pl-circular" viewBox="25 25 50 50">
                     <circle class="plc-path" cx="50" cy="50" r="20"/>
                 </svg>
             </div>
         </div>
+        <!-- [END] PAGE LOADER -->
+
+        <!-- [START] HEADER -->
         <header id="header" class="media">
+
+            <!-- [START] LOGO | TITLE -->
             <div class="pull-left h-logo">
                 <a href="/">
                     Localhost
                     <small><span class="nbProjet"></span> Repositories</small>
                 </a>
             </div>
+            <!-- [END] LOGO | TITLE -->
+
+            <!-- [START] MENU -->
             <ul class="pull-right h-menu">
+
+                <!-- [START] SEARCHBAR FOR MOBILE -->
                 <li class="hm-search-trigger">
                     <a href="" data-ma-action="search-open">
                         <i class="hm-icon zmdi zmdi-search"></i>
                     </a>
                 </li>
+                <!-- [END] SEARCHBAR FOR MOBILE -->
+
+                <!-- [START] SHIT U NEED -->
                 <li class="dropdown h-apps">
                     <a data-toggle="dropdown" href="">
                         <i class="hm-icon zmdi zmdi-apps"></i>
@@ -46,96 +56,99 @@
                     <ul class="dropdown-menu pull-right">
                         <li>
                             <a href="https://www.messenger.com" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Messenger</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://mail.google.com/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Gmail</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://outlook.live.com/mail/#/inbox/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Outlook</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://calendar.google.com/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Agenda</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://freedcamp.com/dashboard/home" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>FreedCamp</small>
                             </a>
                         </li>
                         <li>
                             <a href="http://devdocs.io/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>DevDocs</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-github zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-github zmdi-hc-fw"></i>
                                 <small>Github</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.ovh.com/auth/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>OVH</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://drive.google.com/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Drive</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://analytics.google.com/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Analytics</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.google.com/adsense" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Adsense</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Linkedin</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/RemyManescau/" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Facebook</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://twitter.com/remymanescau" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Twitter</small>
                             </a>
                         </li>
                         <li>
                             <a href="https://plus.google.com/+R%C3%A9myManescau" target="_blank">
-                                <i class="palette-Light-Blue bg zmdi zmdi-router zmdi-hc-fw"></i>
+                                <i class="bg zmdi zmdi-router zmdi-hc-fw"></i>
                                 <small>Google +</small>
                             </a>
                         </li>
                     </ul>
                 </li>
+                <!-- [END] SHIT U NEED -->
+
+                <!-- [START] SUBMENU TOOLS -->
                 <li class="dropdown">
                     <a data-toggle="dropdown" href=""><i class="hm-icon zmdi zmdi-more-vert"></i></a>
                     <ul class="dropdown-menu dm-icon pull-right">
@@ -150,20 +163,32 @@
                         </li>
                     </ul>
                 </li>
+                <!-- [END] SUBMENU TOOLS -->
+
+                <!-- [START] PROFIL IMG -->
                 <li class="dropdown hm-profile">
                     <a data-toggle="dropdown" href="">
                         <img src="_wampindexer/web/img/goomie.jpg" alt="">
                     </a>
                 </li>
+                <!-- [END] PROFIL IMG -->
+
             </ul>
+            <!-- [END] MENU -->
+
+            <!-- [START] SEARCHBAR -->
             <div class="media-body h-search">
                 <form class="p-relative">
                     <input type="text" class="hs-input" id="myInput" placeholder="Find some gucci ...">
                     <i class="zmdi zmdi-search hs-reset" data-ma-action="search-clear"></i>
                 </form>
             </div>
-        </header>
+            <!-- [END] SEARCHBAR -->
 
+        </header>
+        <!-- [END] HEADER -->
+
+        <!-- [START] REPOSITORIES SECTION -->
         <section id="main">
             <section id="content">
                 <div class="container">
@@ -176,12 +201,14 @@
                 </div>
             </section>
         </section>
+        <!-- [END] REPOSITORIES SECTION -->
 
-        <!-- Javascript Libraries -->
+        <!-- Vendors JS -->
         <script src="_wampindexer/web/vendors/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="_wampindexer/web/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="_wampindexer/web/vendors/bower_components/Waves/dist/waves.min.js"></script>
         <script src="_wampindexer/web/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <!-- Custom JS -->
         <script src="_wampindexer/web/js/functions.js"></script>
         <script src="_wampindexer/web/js/actions.js"></script>
         <script src="_wampindexer/web/js/app.js"></script>
