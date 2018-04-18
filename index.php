@@ -209,8 +209,6 @@
         <script src="_wampindexer/web/vendors/bower_components/Waves/dist/waves.min.js"></script>
         <script src="_wampindexer/web/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <!-- Custom JS -->
-        <script src="_wampindexer/web/js/functions.js"></script>
-        <script src="_wampindexer/web/js/actions.js"></script>
         <script src="_wampindexer/web/js/app.js"></script>
     </body>
   </html>
