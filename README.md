@@ -1,5 +1,10 @@
 # _wampindexer
 Template is using :
+
+- composer
+- php 7
+- wamp
+
 - _h5ai : https://larsjung.de/h5ai/ 
 a sweet folder indexer 
 
