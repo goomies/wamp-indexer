@@ -101,13 +101,13 @@ $(document).ready(function() {
     var nbProjet = $('.grid').length;
     $( ".nbProjet" ).append( nbProjet );
 
-    /*--------------------------------------
-        Apparence grid
-    ---------------------------------------*/
+    // /*--------------------------------------
+    //     Apparence grid
+    // ---------------------------------------*/
     var divs = $("div.myGrid > div.grid");
     var projetPerColm = nbProjet/3;
     for(var i = 0; i < divs.length; i+=projetPerColm) {
-      divs.slice(i, i+projetPerColm).wrapAll("<div class='col-md-4 col-sm-6'></div>");
+      divs.slice(i, i+projetPerColm);
     }
 
     /*--------------------------------------
