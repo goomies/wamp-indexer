@@ -201,7 +201,7 @@
                         <h2><?php echo $wampConfig; ?></h2>
                     </div>
                     <div class="row myGrid">
-                          <?php echo $repositories; ?>
+                      <?php echo $repositories; ?>
                     </div>
                 </div>
             </section>
