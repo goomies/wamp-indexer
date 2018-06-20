@@ -79,7 +79,6 @@ $(document).ready(function() {
     /* --------------------------------------------------------
         Top Search
     ----------------------------------------------------------*/
-
     /* Bring search reset icon when focused */
     $('body').on('focus', '.hs-input', function(){
         $('.h-search').addClass('focused');
@@ -101,13 +100,13 @@ $(document).ready(function() {
     var nbProjet = $('.grid').length;
     $( ".nbProjet" ).append( nbProjet );
 
-    // /*--------------------------------------
-    //     Apparence grid
-    // ---------------------------------------*/
+    /*----------------------------------------
+        Apparence grid
+    -----------------------------------------*/
     var divs = $("div.myGrid > div.grid");
     var projetPerColm = nbProjet/3;
-    for(var i = 0; i < divs.length; i+=projetPerColm) {
-      divs.slice(i, i+projetPerColm);
+    for (var i = 0; i < divs.length; i+=projetPerColm) {
+        divs.slice(i, i+projetPerColm).wrapAll("<div class='grid col-md-4 col-sm-6'></div>");
     }
 
     /*--------------------------------------
