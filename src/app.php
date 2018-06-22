@@ -24,65 +24,65 @@ foreach ($finder as $content) {
     $contentImg = $contentName.'/screenshot.png';
     // Folder - avatar
     if ($extension == "") {
-        if (file_exists($contentImg)) {
-            $contentImg = $contentName.'/screenshot.png';
+        if (file_exists($contentIcon)) {
+            $contentIcon = $contentName.'/screenshot.png';
         } else {
-            $contentImg = "../_wampindexer/web/img/folder.png";
+            $contentIcon = "../_wampindexer/web/img/folder.png";
         }
     }
     // Site & Dev - avatar
     elseif ($extension == "fr" || $extension == "com") {
-        if (file_exists($contentImg)) {
-            $contentImg = $contentName.'/screenshot.png';
+        if (file_exists($contentIcon)) {
+            $contentIcon = $contentName.'/screenshot.png';
         } else {
-            $contentImg = "../_wampindexer/web/img/site.png";
+            $contentIcon = "../_wampindexer/web/img/site.png";
         }
     } elseif ($extension == "html") {
-        $contentImg = "../_wampindexer/web/img/html.png";
+        $contentIcon = "../_wampindexer/web/img/html.png";
     } elseif ($extension == "css") {
-        $contentImg = "../_wampindexer/web/img/css.png";
+        $contentIcon = "../_wampindexer/web/img/css.png";
     } elseif ($extension == "js") {
-        $contentImg = "../_wampindexer/web/img/js.png";
+        $contentIcon = "../_wampindexer/web/img/js.png";
     } elseif ($extension == "xml") {
-        $contentImg = "../_wampindexer/web/img/xml.png";
+        $contentIcon = "../_wampindexer/web/img/xml.png";
     }
     // Picture - avatar
     elseif ($extension == "jpg") {
-        $contentImg = "../_wampindexer/web/img/jpg.png";
+        $contentIcon = "../_wampindexer/web/img/img.png";
     } elseif ($extension == "png") {
-        $contentImg = "../_wampindexer/web/img/png.png";
+        $contentIcon = "../_wampindexer/web/img/img.png";
     } elseif ($extension == "gif") {
-        $contentImg = "../_wampindexer/web/img/gif.png";
+        $contentIcon = "../_wampindexer/web/img/gif.png";
     } elseif ($extension == "svg") {
-        $contentImg = "../_wampindexer/web/img/svg.png";
+        $contentIcon = "../_wampindexer/web/img/img.png";
     } elseif ($extension == "pdf") {
-        $contentImg = "../_wampindexer/web/img/pdf.png";
+        $contentIcon = "../_wampindexer/web/img/pdf.png";
     } elseif ($extension == "psd") {
-        $contentImg = "../_wampindexer/web/img/psd.png";
+        $contentIcon = "../_wampindexer/web/img/psd.png";
     } elseif ($extension == "ai") {
-        $contentImg = "../_wampindexer/web/img/ai.png";
+        $contentIcon = "../_wampindexer/web/img/ai.png";
     }
     // Text - avatar
     elseif ($extension == "txt") {
-        $contentImg = "../_wampindexer/web/img/txt.png";
+        $contentIcon = "../_wampindexer/web/img/txt.png";
     } elseif ($extension == "docx") {
-        $contentImg = "../_wampindexer/web/img/docx.png";
+        $contentIcon = "../_wampindexer/web/img/docx.png";
     } elseif ($extension == "xlsx") {
-        $contentImg = "../_wampindexer/web/img/xlsx.png";
+        $contentIcon = "../_wampindexer/web/img/xlsx.png";
     } elseif ($extension == "pptx") {
-        $contentImg = "../_wampindexer/web/img/pptx.png";
+        $contentIcon = "../_wampindexer/web/img/pptx.png";
     }
     // Movie - avatar
     elseif ($extension == "mov") {
-        $contentImg = "../_wampindexer/web/img/mov.png";
+        $contentIcon = "../_wampindexer/web/img/mov.png";
     }
     // Sound - avatar
     elseif ($extension == "mp3") {
-        $contentImg = "../_wampindexer/web/img/mp3.png";
+        $contentIcon = "../_wampindexer/web/img/mp3.png";
     }
     // Archive - avatar
     elseif ($extension == "zip") {
-        $contentImg = "../_wampindexer/web/img/zip.png";
+        $contentIcon = "../_wampindexer/web/img/zip.png";
     }
 
     // Description
@@ -101,13 +101,9 @@ foreach ($finder as $content) {
     $repositories  .= '<div class="grid" id="'.$contentName.'">
                           <div class="card animation-demo" id="titre">
                               <div class="card-header">
-                                  <h2><span><a href="/'.$contentName.'" target="_BLANK" class="project">'.$contentName.'</a></span></h2>
+                                  <h2><span><a href="/'.$contentName.'" target="_BLANK" class="project">'.$contentName.'</a></span><span><img src="/'.$contentIcon.'" alt="" class="icon"></span></h2>
                               </div>
-                              <a href="/'.$contentName.'" target="_BLANK">
-                                  <div class="card-body">
-                                      <img src="/'.$contentImg.'" alt="" class="animated">
-                                  </div>
-                              </a>
+
                               <div class="card-header">
                                   <h3><small>'.$description.'</small></h3>
                                   <div class="row">

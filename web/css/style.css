@@ -980,6 +980,12 @@ p.date {
     display: block;
 }
 
+.icon {
+    width: 16px;
+    position: relative;
+    float: right;
+}
+
 .gb_wb {
     border-color: transparent;
     border-style: dashed dashed solid;
