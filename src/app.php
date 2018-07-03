@@ -22,21 +22,18 @@ foreach ($finder as $content) {
     $extension =  pathinfo($contentName, PATHINFO_EXTENSION);
     // Img repository
     $contentImg = $contentName.'/screenshot.png';
+    $contentIcon = $contentName.'/screenshot.png';
     // Folder - avatar
     if ($extension == "") {
-        if (file_exists($contentIcon)) {
+        if (file_exists($contentImg)) {
             $contentIcon = $contentName.'/screenshot.png';
         } else {
             $contentIcon = "../_wampindexer/web/img/folder.png";
         }
     }
     // Site & Dev - avatar
-    elseif ($extension == "fr" || $extension == "com") {
-        if (file_exists($contentIcon)) {
-            $contentIcon = $contentName.'/screenshot.png';
-        } else {
-            $contentIcon = "../_wampindexer/web/img/site.png";
-        }
+    elseif ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
+        $contentIcon = "../_wampindexer/web/img/site.png";
     } elseif ($extension == "html") {
         $contentIcon = "../_wampindexer/web/img/html.png";
     } elseif ($extension == "css") {
@@ -47,12 +44,10 @@ foreach ($finder as $content) {
         $contentIcon = "../_wampindexer/web/img/xml.png";
     }
     // Picture - avatar
-    elseif ($extension == "jpg") {
+    elseif ($extension == "jpg" || $extension == "gif" || $extension == "raw") {
         $contentIcon = "../_wampindexer/web/img/img.png";
     } elseif ($extension == "png") {
         $contentIcon = "../_wampindexer/web/img/img.png";
-    } elseif ($extension == "gif") {
-        $contentIcon = "../_wampindexer/web/img/gif.png";
     } elseif ($extension == "svg") {
         $contentIcon = "../_wampindexer/web/img/img.png";
     } elseif ($extension == "pdf") {
@@ -103,7 +98,11 @@ foreach ($finder as $content) {
                               <div class="card-header">
                                   <h2><span><a href="/'.$contentName.'" target="_BLANK" class="project">'.$contentName.'</a></span><span><img src="/'.$contentIcon.'" alt="" class="icon"></span></h2>
                               </div>
-
+                              <a href="/'.$contentName.'" target="_BLANK">
+                                  <div class="card-body">
+                                      <img src="/'.$contentImg.'" alt="" class="animated">
+                                  </div>
+                              </a>
                               <div class="card-header">
                                   <h3><small>'.$description.'</small></h3>
                                   <div class="row">
