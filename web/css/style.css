@@ -1028,7 +1028,7 @@ p.date {
 br {
     display: none;
 }
-.xdebug-error.xe-warning {
+.xdebug-error.xe-warning, .xdebug-error.xe-notice {
     position: fixed;
     z-index: 11;
     width: 90%;
@@ -1039,16 +1039,16 @@ br {
     border-radius: 20px;
 }
 
-.xdebug-error.xe-warning th, .xdebug-error.xe-warning td {
+.xdebug-error.xe-warning th, .xdebug-error.xe-notice th, .xdebug-error.xe-warning td, .xdebug-error.xe-notice td {
     background-color: #000;
     border: none;
 }
 
-.xdebug-error.xe-warning span {
+.xdebug-error.xe-warning span, .xdebug-error.xe-notice span {
     display: none;
 }
 
-.xdebug-error.xe-warning tr:first-child th {
+.xdebug-error.xe-warning tr:first-child th, .xdebug-error.xe-notice tr:first-child th {
     color: #E91E63;
     padding: 20px;
     border-radius: 15px;
@@ -1057,27 +1057,30 @@ br {
     width: 100%;
 }
 
-.xdebug-error.xe-warning tr:nth-child(2) th {
+.xdebug-error.xe-warning tr:nth-child(2) th, .xdebug-error.xe-notice tr:nth-child(2) th {
     padding: 10px 20px;
     color: #fff;
 }
 
-.xdebug-error.xe-warning tr:nth-child(3) th{
+.xdebug-error.xe-warning tr:nth-child(3) th, .xdebug-error.xe-notice tr:nth-child(3) th {
     color: #fff;
 }
 
-.xdebug-error.xe-warning tr:nth-child(3) th, .xdebug-error.xe-warning tr:nth-child(4) td, .xdebug-error.xe-warning tr:nth-child(5) td, .xdebug-error.xe-warning tr:nth-child(6) td  {
+.xdebug-error.xe-warning tr:nth-child(3) th, .xdebug-error.xe-notice tr:nth-child(3) th,
+.xdebug-error.xe-warning tr:nth-child(4) td, .xdebug-error.xe-notice tr:nth-child(4) td,
+.xdebug-error.xe-warning tr:nth-child(5) td, .xdebug-error.xe-notice tr:nth-child(5) td,
+.xdebug-error.xe-warning tr:nth-child(6) td, .xdebug-error.xe-notice tr:nth-child(6) td  {
     padding-bottom: 10px;
     padding-left: 10px;
     text-align: center;
 }
 
-.xdebug-error.xe-warning tr:nth-child(6) td  {
+.xdebug-error.xe-warning tr:nth-child(6) td, .xdebug-error.xe-notice tr:nth-child(6) td  {
     padding-bottom: 25px;
     border-radius: 15px;
 }
 
-.xdebug-error.xe-warning tr:nth-child(6) td a {
+.xdebug-error.xe-warning tr:nth-child(6) td a, .xdebug-error.xe-notice tr:nth-child(6) td a {
     color: rgb(0, 187, 0);
 }
 
