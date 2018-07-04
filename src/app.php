@@ -20,17 +20,19 @@ foreach ($finder as $content) {
 
     // Folder or File extension
     $extension =  pathinfo($contentName, PATHINFO_EXTENSION);
-    // Img repository
-    $contentImg = $contentName.'/screenshot.png';
 
-    // Icons
+    // Img & Icon repositories
     if ($extension == "") {
         $contentIcon = "../_wampindexer/web/img/folder.png";
+        $contentImg = "";
     }
     elseif ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
         $contentIcon = "../_wampindexer/web/img/site.png";
+        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
+
     } else {
         $contentIcon = "../_wampindexer/web/img/".$extension.".png";
+        $contentImg = "";
     }
 
     // Description
@@ -52,9 +54,7 @@ foreach ($finder as $content) {
                                   <h2><span><a href="/'.$contentName.'" target="_BLANK" class="project">'.$contentName.'</a></span><span><img src="/'.$contentIcon.'" alt="" class="icon"></span></h2>
                               </div>
                               <a href="/'.$contentName.'" target="_BLANK">
-                                  <div class="card-body">
-                                      <img src="/'.$contentImg.'" alt="" class="animated">
-                                  </div>
+                                  <div class="card-body">'.$contentImg.'</div>
                               </a>
                               <div class="card-header">
                                   <h3><small>'.$description.'</small></h3>
