@@ -29,7 +29,10 @@ foreach ($finder as $content) {
     elseif ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
         $contentIcon = "../_wampindexer/web/img/site.png";
         $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
-
+    }
+    elseif ($extension == "email") {
+        $contentIcon = "../_wampindexer/web/img/email.png";
+        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
     } else {
         $contentIcon = "../_wampindexer/web/img/".$extension.".png";
         $contentImg = "";
