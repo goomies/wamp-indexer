@@ -22,16 +22,16 @@ foreach ($finder as $content) {
     $extension =  pathinfo($contentName, PATHINFO_EXTENSION);
 
     // Img & Icon repositories
-    if ($extension == "") {
-        $contentIcon = "../_wampindexer/web/img/folder.png";
-        $contentImg = "";
-    }
-    elseif ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
+    if ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
         $contentIcon = "../_wampindexer/web/img/site.png";
         $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
     }
     elseif ($extension == "email") {
         $contentIcon = "../_wampindexer/web/img/email.png";
+        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
+    } 
+    elseif ($extension == "") {
+        $contentIcon = "../_wampindexer/web/img/folder.png";
         $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
     } else {
         $contentIcon = "../_wampindexer/web/img/".$extension.".png";
@@ -43,7 +43,8 @@ foreach ($finder as $content) {
     if (!file_exists($contentReadme)) {
         $description = "";
     } else {
-        $description =  file_get_contents($contentReadme);
+        // $description =  file_get_contents($contentReadme);
+        $description = '<a href="'.$contentReadme.'" target=_blank><span class="readmore">README.md</span></a></small>';
     }
 
     // Last Update
@@ -51,22 +52,24 @@ foreach ($finder as $content) {
     $lastUpdate = date('d/m/Y', $stat['mtime']);
 
     // Repositories
-    $repositories  .= '<div class="grid" id="'.$contentName.'">
+    $repositories  .= '<div class="grid col-md-4">
+                        <div class="grid repository-container" id="'.$contentName.'">
                           <div class="card animation-demo" id="titre">
                               <div class="card-header">
-                                  <h2><span><a href="/'.$contentName.'" class="project">'.$contentName.'</a></span><span><img src="/'.$contentIcon.'" alt="" class="icon"></span></h2>
+                                  <h2><span><a href="/'.$contentName.'" target=_blank class="project">'.$contentName.'</a></span><span><img src="/'.$contentIcon.'" alt="" class="icon"></span></h2>
                               </div>
-                              <a href="/'.$contentName.'">
+                              <a href="/'.$contentName.'" target=_blank>
                                   <div class="card-body">'.$contentImg.'</div>
                               </a>
                               <div class="card-header">
-                                  <h3><small>'.$description.'</small></h3>
+                                <h3><small>'.$description.'</small></h3>
                                   <div class="row">
                                       <div class="col-md-6 text-left"><p class="date">'.$lastUpdate.'</p></div>
-                                      <div class="col-md-6 text-right"><a href="/'.$contentName.'" class="seeProject">local<span style="margin-right:7px;"></span><i class="zmdi zmdi-caret-right-circle zmdi-hc-fw arrowLink"></i></a></div>
+                                      <div class="col-md-6 text-right"><a href="/'.$contentName.'" target=_blank class="seeProject">local<span style="margin-right:7px;"></span><i class="zmdi zmdi-caret-right-circle zmdi-hc-fw arrowLink"></i></a></div>
                                   </div>
                               </div>
                           </div>
+                        </div>
                       </div>';
 }
 return $repositories;

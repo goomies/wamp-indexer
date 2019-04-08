@@ -52,7 +52,14 @@ $(window).load(function(){
 
 $(document).ready(function() {
     /*--------------------------------------
-        Header Search
+        Display Number of Projects
+    ---------------------------------------*/
+    $("#_wampindexer").removeClass("grid");
+    var nbProjet = $('.repository-container').length;
+    $( ".nbProjet" ).append( nbProjet );
+
+    /*--------------------------------------
+        Clear Header Search Bar
     ---------------------------------------*/
     $('body').on('click', '[data-ma-action]', function (e) {
         e.preventDefault();
@@ -77,7 +84,7 @@ $(document).ready(function() {
     });
 
     /* --------------------------------------------------------
-        Top Search
+        Reset Icon Search Bar
     ----------------------------------------------------------*/
     /* Bring search reset icon when focused */
     $('body').on('focus', '.hs-input', function(){
@@ -93,42 +100,41 @@ $(document).ready(function() {
         }
     });
 
-    /*--------------------------------------
-        display number of Projects
-    ---------------------------------------*/
-    $("#_wampindexer").removeClass("grid");
-    var nbProjet = $('.grid').length;
-    $( ".nbProjet" ).append( nbProjet );
-
     /*----------------------------------------
         Apparence grid
     -----------------------------------------*/
-    var divs = $("div.myGrid > div.grid");
-    var projetPerColm = nbProjet/3;
-    for (var i = 0; i < divs.length; i+=projetPerColm) {
-        divs.slice(i, i+projetPerColm).wrapAll("<div class='grid col-md-4 col-sm-6'></div>");
-    }
+    // var divs = $("div.myGrid > div.grid");
+    // var projetPerColm = nbProjet/3;
+    // for (var i = 0; i < divs.length; i+=projetPerColm) {
+    //     divs.slice(i, i+projetPerColm).wrapAll("<div class='grid col-md-4'></div>");
+    // }
 
     /*--------------------------------------
-        Filter Site into the grids
+        Search Bar Functionalities & Reset
     ---------------------------------------*/
     $( "#myInput" ).keyup(function() {
         var input, filter, container, titre, h2, span, i;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
-        container = $(".grid");
+        container = $(".repository-container");
         titre = document.getElementById("titre");
         h2 = titre.getElementsByTagName("h2");
 
+        /* Find specific repository and reset search */
         for (i = 0; i < container.length; i++) {
             projet = container[i];
             h2 = container[i].getElementsByTagName("h2")[0];
             span = container[i].getElementsByTagName("span")[0];
             if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                projet.style.display = "";
+                projet.parentNode.style.display = "";
             } else {
-                projet.style.display = "none";
+                projet.parentNode.style.display = "none";
             }
+
+            /* Icon reset search */
+            $("i.hs-reset").click(function(){
+                $(".grid").css('display', 'block');
+            });
         }
     });
 

@@ -58,21 +58,9 @@
                       <div class="gb_wb"></div>
                       <div class="gb_vb"></div>
                         <li>
-                            <a href="https://www.messenger.com" target="_blank">
-                                <i class="bg zmdi zmdi-comments zmdi-hc-fw"></i>
-                                <small>Messenger</small>
-                            </a>
-                        </li>
-                        <li>
                             <a href="https://mail.google.com/" target="_blank">
                                 <i class="bg zmdi zmdi-email zmdi-hc-fw"></i>
                                 <small>Gmail</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://outlook.live.com/mail/#/inbox/" target="_blank">
-                                <i class="bg zmdi zmdi-account-box-mail zmdi-hc-fw"></i>
-                                <small>Outlook</small>
                             </a>
                         </li>
                         <li>
@@ -80,19 +68,13 @@
                                 <i class="bg zmdi zmdi-calendar zmdi-hc-fw"></i>
                                 <small>Agenda</small>
                             </a>
-                        </li>
+                        </li> 
                         <li>
-                            <a href="https://freedcamp.com/dashboard/home" target="_blank">
-                                <i class="bg zmdi zmdi-coffee zmdi-hc-fw"></i>
-                                <small>FreedCamp</small>
+                            <a href="https://drive.google.com/" target="_blank">
+                                <i class="bg zmdi zmdi-google-drive zmdi-hc-fw"></i>
+                                <small>Drive</small>
                             </a>
-                        </li>
-                        <li>
-                            <a href="http://devdocs.io/" target="_blank">
-                                <i class="bg zmdi zmdi-file-text zmdi-hc-fw"></i>
-                                <small>DevDocs</small>
-                            </a>
-                        </li>
+                        </li> 
                         <li>
                             <a href="https://github.com/" target="_blank">
                                 <i class="bg zmdi zmdi-github zmdi-hc-fw"></i>
@@ -100,27 +82,52 @@
                             </a>
                         </li>
                         <li>
+                            <a href="https://gitlab.com/" target="_blank">
+                                <i class="bg zmdi zmdi-share zmdi-hc-fw"></i>
+                                <small>Gitlab</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank">
+                                <i class="bg zmdi zmdi-stack-overflow zmdi-hc-fw"></i>
+                                <small>Stack</small>
+                            </a>
+                        </li>
+                        
+                        <li>
                             <a href="https://www.ovh.com/auth/" target="_blank">
                                 <i class="bg zmdi zmdi-cloud-outline-alt zmdi-hc-fw"></i>
                                 <small>OVH</small>
                             </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/" target="_blank">
-                                <i class="bg zmdi zmdi-google-drive zmdi-hc-fw"></i>
-                                <small>Drive</small>
+                            <a href="https://www.messenger.com" target="_blank">
+                                <i class="bg zmdi zmdi-comments zmdi-hc-fw"></i>
+                                <small>Messenger</small>
                             </a>
                         </li>
                         <li>
-                            <a href="https://analytics.google.com/" target="_blank">
-                                <i class="bg zmdi zmdi-trending-up zmdi-hc-fw"></i>
-                                <small>Analytics</small>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="bg zmdi zmdi-facebook zmdi-hc-fw"></i>
+                                <small>Facebook</small>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.google.com/adsense" target="_blank">
-                                <i class="bg zmdi zmdi-chart zmdi-hc-fw"></i>
-                                <small>Adsense</small>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="bg zmdi zmdi-instagram zmdi-hc-fw"></i>
+                                <small>Instagram</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="bg zmdi zmdi-tv-play zmdi-hc-fw"></i>
+                                <small>Youtube</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.fr/" target="_blank">
+                                <i class="bg zmdi zmdi-pinterest-box zmdi-hc-fw"></i>
+                                <small>Pinterest</small>
                             </a>
                         </li>
                         <li>
@@ -130,35 +137,28 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/RemyManescau/" target="_blank">
-                                <i class="bg zmdi zmdi-facebook zmdi-hc-fw"></i>
-                                <small>Facebook</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/remymanescau" target="_blank">
+                            <a href="https://twitter.com/" target="_blank">
                                 <i class="bg zmdi zmdi-twitter zmdi-hc-fw"></i>
                                 <small>Twitter</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/+R%C3%A9myManescau" target="_blank">
-                                <i class="bg zmdi zmdi-google-plus zmdi-hc-fw"></i>
-                                <small>Google +</small>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <!-- [END] SHIT U NEED -->
 
-                <!-- [START] SUBMENU TOOLS -->
-                <li class="dropdown">
-                    <a data-toggle="dropdown" href=""><i class="hm-icon zmdi zmdi-more-vert"></i></a>
+                <!-- [START] SUBMENU TOOLS & PROFIL IMG -->
+                <li class="dropdown hm-profile">
+                    
+                    <!-- [START] PROFIL IMG -->
+                    <a data-toggle="dropdown" href=""><img src="_wampindexer/web/img/profile.png" alt=""></a>
+                    <!-- [END] PROFIL IMG -->
+
+                    <!-- [START] SUBMENU TOOLS -->
                     <ul class="dropdown-menu wampindexTools dm-icon pull-right">
                         <div class="gb_wb"></div>
                         <div class="gb_vb"></div>
                         <li>
-                            <a href="_wampindexer/search-replace-db" target="_blank"><i class="zmdi zmdi-swap"></i> Search & Replace DB</a>
+                            <a href="http://devdocs.io/" target="_blank"><i class="zmdi zmdi-plaster"></i> Devdocs</a>
                         </li>
                         <li>
                             <a href="phpmyadmin/" target="_blank"><i class="zmdi zmdi-dns"></i> phpMyAdmin</a>
@@ -167,16 +167,10 @@
                             <a href="phpsysinfo/index.php?disp=dynamic" target="_blank"><i class="zmdi zmdi-comment-list"></i> phpsysinfo</a>
                         </li>
                     </ul>
-                </li>
-                <!-- [END] SUBMENU TOOLS -->
+                    <!-- [END] SUBMENU TOOLS -->
 
-                <!-- [START] PROFIL IMG -->
-                <li class="dropdown hm-profile">
-                    <a data-toggle="dropdown" href="">
-                        <img src="_wampindexer/web/img/profile.png" alt="">
-                    </a>
                 </li>
-                <!-- [END] PROFIL IMG -->
+                <!-- [END] SUBMENU TOOLS & PROFIL IMG -->
 
             </ul>
             <!-- [END] MENU -->
