@@ -19,7 +19,7 @@ a simple google material theme for the design inspiration
 - Description : `README.md` from your git project folder or other
 
 ## Screenshot
-![alt text](https://raw.githubusercontent.com/goomies/wampindexer/master/screenshot.png)
+![alt text](https://raw.githubusercontent.com/goomies/wampindexer/blob/master/screenshot.png)
 
 ## Installation
 1. Donwload and copy the folder `_wampindexer` inside your `www` folder.
