@@ -26,6 +26,10 @@ class ComposerStaticInitb329280d4902fed31acd0fbdae56f58a
         array (
             'Psr\\Http\\Message\\' => 17,
         ),
+        'M' => 
+        array (
+            'Michelf\\' => 8,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -46,6 +50,10 @@ class ComposerStaticInitb329280d4902fed31acd0fbdae56f58a
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Michelf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/michelf/php-markdown/Michelf',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
