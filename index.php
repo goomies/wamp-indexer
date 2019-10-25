@@ -58,9 +58,9 @@
                       <div class="gb_wb"></div>
                       <div class="gb_vb"></div>
                         <li>
-                            <a href="https://mail.google.com/" target="_blank">
+                            <a href="#" class="filter-sites">
                                 <i class="bg zmdi zmdi-email zmdi-hc-fw"></i>
-                                <small>Gmail</small>
+                                <small>Sites</small>
                             </a>
                         </li>
                         <li>

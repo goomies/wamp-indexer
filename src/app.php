@@ -24,18 +24,18 @@ foreach ($finder as $content) {
     // Img & Icon repositories
     if ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
         $contentIcon = "../_wampindexer/web/img/site.png";
-        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
+        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated site-extension'>";
     }
     elseif ($extension == "email") {
         $contentIcon = "../_wampindexer/web/img/email.png";
-        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
+        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated email-extension'>";
     } 
     elseif ($extension == "") {
         $contentIcon = "../_wampindexer/web/img/folder.png";
-        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated'>";
+        $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated repository-extension'>";
     } else {
         $contentIcon = "../_wampindexer/web/img/".$extension.".png";
-        $contentImg = "";
+        $contentImg = "<img class='file-extension'>";
     }
 
     // Description

@@ -14,7 +14,6 @@ $(window).load(function(){
             setTimeout (function () {
                 $('.page-loader').fadeOut();
             }, 500);
-
         }
     }
 
@@ -135,6 +134,39 @@ $(document).ready(function() {
             $("i.hs-reset").click(function(){
                 $(".grid").css('display', 'block');
             });
+        }
+    });
+
+    /*--------------------------------------
+        Filter Type Projects
+    ---------------------------------------*/
+    $(".filter").click(function(e) {
+        e.preventDefault();
+        
+        /* Set types */
+        folders = $(".repository-extension");
+        files = $(".file-extension");
+        sites = $(".site-extension");
+        emails = $(".email-extension");
+
+        /* Display types when filter */
+        filter = this.className;
+        $(".grid.col-md-4").hide();
+
+        if (filter == "filter all") {
+            $(".grid.col-md-4").show();
+        }
+        if (filter == "filter folders") {
+            folders.parents().closest(".grid.col-md-4").show();
+        }
+        if (filter == "filter files") {
+            files.parents().closest(".grid.col-md-4").show();
+        }
+        if (filter == "filter sites") {
+            sites.parents().closest(".grid.col-md-4").show();
+        }
+        if (filter == "filter emails") {
+            emails.parents().closest(".grid.col-md-4").show();
         }
     });
 
