@@ -58,88 +58,33 @@
                       <div class="gb_wb"></div>
                       <div class="gb_vb"></div>
                         <li>
-                            <a href="#" class="filter-sites">
-                                <i class="bg zmdi zmdi-email zmdi-hc-fw"></i>
+                            <a href="#" class="filter all">
+                                <i class="bg zmdi zmdi-view-list-alt zmdi-hc-fw"></i>
+                                <small>All</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="filter folders">
+                                <i class="bg zmdi zmdi-folder-outline zmdi-hc-fw"></i>
+                                <small>Folders</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="filter files">
+                                <i class="bg zmdi zmdi-file zmdi-hc-fw"></i>
+                                <small>Files</small>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#" class="filter sites">
+                                <i class="bg zmdi zmdi-desktop-windows zmdi-hc-fw"></i>
                                 <small>Sites</small>
                             </a>
-                        </li>
-                        <li>
-                            <a href="https://calendar.google.com/" target="_blank">
-                                <i class="bg zmdi zmdi-calendar zmdi-hc-fw"></i>
-                                <small>Agenda</small>
-                            </a>
                         </li> 
                         <li>
-                            <a href="https://drive.google.com/" target="_blank">
-                                <i class="bg zmdi zmdi-google-drive zmdi-hc-fw"></i>
-                                <small>Drive</small>
-                            </a>
-                        </li> 
-                        <li>
-                            <a href="https://github.com/" target="_blank">
-                                <i class="bg zmdi zmdi-github zmdi-hc-fw"></i>
-                                <small>Github</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://gitlab.com/" target="_blank">
-                                <i class="bg zmdi zmdi-share zmdi-hc-fw"></i>
-                                <small>Gitlab</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank">
-                                <i class="bg zmdi zmdi-stack-overflow zmdi-hc-fw"></i>
-                                <small>Stack</small>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="https://www.ovh.com/auth/" target="_blank">
-                                <i class="bg zmdi zmdi-cloud-outline-alt zmdi-hc-fw"></i>
-                                <small>OVH</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.messenger.com" target="_blank">
-                                <i class="bg zmdi zmdi-comments zmdi-hc-fw"></i>
-                                <small>Messenger</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="bg zmdi zmdi-facebook zmdi-hc-fw"></i>
-                                <small>Facebook</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class="bg zmdi zmdi-instagram zmdi-hc-fw"></i>
-                                <small>Instagram</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/" target="_blank">
-                                <i class="bg zmdi zmdi-tv-play zmdi-hc-fw"></i>
-                                <small>Youtube</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.fr/" target="_blank">
-                                <i class="bg zmdi zmdi-pinterest-box zmdi-hc-fw"></i>
-                                <small>Pinterest</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/" target="_blank">
-                                <i class="bg zmdi zmdi-linkedin-box zmdi-hc-fw"></i>
-                                <small>Linkedin</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank">
-                                <i class="bg zmdi zmdi-twitter zmdi-hc-fw"></i>
-                                <small>Twitter</small>
+                            <a href="#" class="filter emails">
+                                <i class="bg zmdi zmdi-email zmdi-hc-fw"></i>
+                                <small>Emails</small>
                             </a>
                         </li>
                     </ul>
