@@ -2,21 +2,21 @@
     Detact Mobile Browser
 ---------------------------------------*/
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-   $('html').addClass('ismobile');
+    $('html').addClass('ismobile');
 }
-
+ 
 $(window).load(function(){
     /* --------------------------------------------------------
         Page Loader
-     ---------------------------------------------------------*/
-    if(!$('html').hasClass('ismobile')) {
+    ---------------------------------------------------------*/
+     if(!$('html').hasClass('ismobile')) {
         if($('.page-loader')[0]) {
             setTimeout (function () {
                 $('.page-loader').fadeOut();
             }, 500);
         }
     }
-
+ 
     /*--------------------------------------
         Welcome Message
     ---------------------------------------*/
@@ -43,12 +43,12 @@ $(window).load(function(){
             }
         });
     };
-
+ 
     if (!$('.login-content')[0]) {
         notify('On your localhost MAMENE !', 'inverse');
     }
 });
-
+ 
 $(document).ready(function() {
     /*--------------------------------------
         Display Number of Projects
@@ -56,7 +56,7 @@ $(document).ready(function() {
     $("#_wampindexer").removeClass("grid");
     var nbProjet = $('.repository-container').length;
     $( ".nbProjet" ).append( nbProjet );
-
+ 
     /*--------------------------------------
         Clear Header Search Bar
     ---------------------------------------*/
@@ -64,7 +64,7 @@ $(document).ready(function() {
         e.preventDefault();
         var action = $(this).data('ma-action');
         var $this = $(this);
-
+ 
         switch (action) {
             /* Clear Search */
             case 'search-clear':
@@ -81,7 +81,7 @@ $(document).ready(function() {
                 break;
         }
     });
-
+ 
     /* --------------------------------------------------------
         Reset Icon Search Bar
     ----------------------------------------------------------*/
@@ -89,7 +89,7 @@ $(document).ready(function() {
     $('body').on('focus', '.hs-input', function(){
         $('.h-search').addClass('focused');
     });
-
+ 
     /* Take off reset icon if input length is 0, when blurred */
     $('body').on('blur', '.hs-input', function(){
         var x = $(this).val();
@@ -171,13 +171,22 @@ $(document).ready(function() {
     });
 
     /*--------------------------------------
-        Animation
-     ---------------------------------------*/
-     $(".card.animation-demo").hover(
-       function() {
-         $(this).find(".animated").addClass( "pulse" );
-       }, function() {
-         $(this).find(".animated").removeClass( "pulse" );
-       }
-     );
-});
+        See README.md as description
+    ---------------------------------------*/
+    $(".see-readmore").hide();
+    $(".readmore").click(function() {
+        $(this).toggleClass("readmore-clicked");
+        $(this).next().toggle();
+    });
+ 
+    /*--------------------------------------
+         Animation
+    ---------------------------------------*/
+      $(".card.animation-demo").hover(
+        function() {
+            $(this).find(".animated").addClass( "pulse" );
+        }, function() {
+            $(this).find(".animated").removeClass( "pulse" );
+        }
+    );
+ });
