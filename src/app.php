@@ -7,7 +7,7 @@ use Symfony\Component\Finder\Finder;
 // PHP Markdown parser
 use Michelf\Markdown;
 // Guzzle PHP HTTP client
-
+use GuzzleHttp\Client;
 
 // Init repositories
 $repositories = '';

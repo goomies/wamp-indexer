@@ -10,9 +10,10 @@ This **Wampindexer** project is a simple application using [Composer](https://ge
 **Wampindexer** displays your repositories and files as a portfolio.
 
 - **Repository Count**
-- **Search Projects by Name**
-- **Filter ProjectS by Type**
-- **Admin Panel**
+- **Search Repository by Name**
+- **Filter Repository by Type**
+- **Convert README file as HTML and use it as a description**
+- **Server informations**
 - **Responsive Design** - fully adapted for a simple navigation, exactly well presented on any screen.
 
 # Author
@@ -42,7 +43,7 @@ By default, I've always named my repositories by the domains : `mydomain.com`
 
 * Title - the name of your repository.
 * Thumbnail - `screenshot.png` from your repository.
-* Description : `README.md` from your repository.
+* Description - `README.md` from your repository.
 
 ## Default setup
 the ` _wampindexer` folder inside your `www` folder is hidden with CSS in order to not be count and displayed as a repository.
@@ -55,9 +56,11 @@ the ` _wampindexer` folder inside your `www` folder is hidden with CSS in order 
 # Credits
 Used in this template:
 
-* [WampServer](https://reactjs.org)
-* [Material Design](http://getbootstrap.com)
-* [Composer](https://github.com/reactstrap/reactstrap)
-* [Packagist](http://benpickles.github.io/peity/)
-* [Symfony](https://packagist.org/packages/symfony/symfony)
-* [h5ai](http://holderjs.com)
+* [WampServer](http://www.wampserver.com/)
+* [Material Design](https://material.io/design/)
+* [Composer](https://getcomposer.org/)
+* [Packagist](https://packagist.org/)
+* [Symfony finder](https://packagist.org/packages/symfony/finder)
+* [Michelf php-markdown](https://packagist.org/packages/michelf/php-markdown)
+* [Guzzle HTTP PHP](https://packagist.org/packages/guzzlehttp/guzzle)
+* [h5ai](https://larsjung.de/h5ai/)
