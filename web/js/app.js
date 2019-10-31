@@ -54,8 +54,8 @@ $(document).ready(function() {
         Display Number of Projects
     ---------------------------------------*/
     $("#_wampindexer").removeClass("grid");
-    var nbProjet = $('.repository-container').length;
-    $( ".nbProjet" ).append( nbProjet );
+    var nbProjet = $('.repository-container').length +" "+"Repositories";
+    $(".nbProjet").append(nbProjet);
  
     /*--------------------------------------
         Clear Header Search Bar
@@ -99,15 +99,6 @@ $(document).ready(function() {
         }
     });
 
-    /*----------------------------------------
-        Apparence grid
-    -----------------------------------------*/
-    // var divs = $("div.myGrid > div.grid");
-    // var projetPerColm = nbProjet/3;
-    // for (var i = 0; i < divs.length; i+=projetPerColm) {
-    //     divs.slice(i, i+projetPerColm).wrapAll("<div class='grid col-md-4'></div>");
-    // }
-
     /*--------------------------------------
         Search Bar Functionalities & Reset
     ---------------------------------------*/
@@ -130,9 +121,19 @@ $(document).ready(function() {
                 projet.parentNode.style.display = "none";
             }
 
+            /* Reset number of projects */
+            var nbProjet = $('.grid.col-md-4:not([style*="display: none"])').length+" "+"Repositories";
+            $(".nbProjet").empty();
+            $(".nbProjet").append(nbProjet);
+
             /* Icon reset search */
             $("i.hs-reset").click(function(){
                 $(".grid").css('display', 'block');
+
+                /* Reset number of projects */
+                var nbProjet = $('.grid.col-md-4:not([style*="display: none"])').length+" "+"Repositories";
+                $(".nbProjet").empty();
+                $(".nbProjet").append(nbProjet);
             });
         }
     });
@@ -144,49 +145,80 @@ $(document).ready(function() {
         e.preventDefault();
         
         /* Set types */
-        folders = $(".repository-extension");
-        files = $(".file-extension");
-        sites = $(".site-extension");
-        emails = $(".email-extension");
+        projects = $(".repository-extension").parents().closest(".grid.col-md-4");
+        files = $(".file-extension").parents().closest(".grid.col-md-4");
+        sites = $(".site-extension").parents().closest(".grid.col-md-4");
+        emails = $(".email-extension").parents().closest(".grid.col-md-4");
 
         /* Display types when filter */
         filter = this.className;
         $(".grid.col-md-4").hide();
+        $(".grid.col-md-4").removeClass("animated fadeIn"); 
 
         if (filter == "filter all") {
             $(".grid.col-md-4").show();
+            /* Reset number of projects */
+            var nbProjet = $('.repository-container').length +" "+"Repositories";
+            $(".grid.col-md-4").addClass("animated fadeIn"); 
         }
         if (filter == "filter folders") {
-            folders.parents().closest(".grid.col-md-4").show();
+            projects.show();
+            /* Reset number of folders */
+            var nbProjet = projects.length +" "+"Projects";
+            projects.addClass("animated fadeIn"); 
         }
         if (filter == "filter files") {
-            files.parents().closest(".grid.col-md-4").show();
+            files.show();
+            /* Reset number of files */
+            var nbProjet = files.length +" "+"Files";
+            files.addClass("animated fadeIn");
         }
         if (filter == "filter sites") {
-            sites.parents().closest(".grid.col-md-4").show();
+            sites.show();
+            /* Reset number of sites */
+            var nbProjet = sites.length +" "+"Sites";
+            sites.addClass("animated fadeIn");
         }
         if (filter == "filter emails") {
-            emails.parents().closest(".grid.col-md-4").show();
+            emails.show();
+            /* Reset number of emails */
+            var nbProjet = emails.length +" "+"Emails";
+            emails.addClass("animated fadeIn");
         }
+
+        /* Display mumber of projects of type */
+        $(".nbProjet").empty();
+        $(".nbProjet").append(nbProjet);
     });
 
     /*--------------------------------------
         See README.md as description
     ---------------------------------------*/
     $(".see-readmore").hide();
+
     $(".readmore").click(function() {
-        $(this).toggleClass("readmore-clicked");
-        $(this).next().toggle();
+        $(this).toggleClass("clicked");
+        $(this).next().toggle("slow");
+        $(this).next().toggleClass("bounceInDown"); 
     });
  
     /*--------------------------------------
          Animation
     ---------------------------------------*/
-      $(".card.animation-demo").hover(
+    $(".card.animation-demo").hover(
         function() {
-            $(this).find(".animated").addClass( "pulse" );
+            $(this).find(".animated.extensions").addClass("pulse");
         }, function() {
-            $(this).find(".animated").removeClass( "pulse" );
+            $(this).find(".animated.extensions").removeClass("pulse");
         }
     );
+
+    /*----------------------------------------
+        Apparence grid
+    -----------------------------------------*/
+    // var divs = $("div.myGrid > div.grid");
+    // var projetPerColm = nbProjet/3;
+    // for (var i = 0; i < divs.length; i+=projetPerColm) {
+    //     divs.slice(i, i+projetPerColm).wrapAll("<div class='grid col-md-4'></div>");
+    // }
  });

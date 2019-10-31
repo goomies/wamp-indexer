@@ -6,6 +6,11 @@ require __DIR__ . '/../vendor/autoload.php';
 use Symfony\Component\Finder\Finder;
 // PHP Markdown parser
 use Michelf\Markdown;
+// Guzzle PHP HTTP client
+
+
+// Init repositories
+$repositories = '';
 
 // Server version and virtual hostname
 $wampConfig = $_SERVER['SERVER_SIGNATURE'];
@@ -13,9 +18,6 @@ $wampConfig = $_SERVER['SERVER_SIGNATURE'];
 // Filter files and directories inside www folder excluding the Wampindexer application using Finder
 $finder = new Finder();
 $finder->in(__DIR__.'\..\..')->depth('== 0')->exclude('_wampindexer')->notName('index.php')->sortBytype();
-
-// Init repositories
-$repositories = '';
 
 // No repositories
 if (!count($finder)) {
@@ -34,22 +36,22 @@ else {
         if ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
             // Type - site
             $contentIcon = "../_wampindexer/web/img/site.png";
-            $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated site-extension'>";
+            $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated site-extension extensions'>";
         } 
         elseif ($extension == "email") {
             // Type - email
             $contentIcon = "../_wampindexer/web/img/email.png";
-            $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated email-extension'>";
+            $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated email-extension extensions'>";
         }
         elseif ($extension == "") {
             // Type - folder 
             $contentIcon = "../_wampindexer/web/img/folder.png";
-            $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated repository-extension'>";
+            $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated repository-extension extensions'>";
         }
         else {
             // Type - file
             $contentIcon = "../_wampindexer/web/img/".$extension.".png";
-            $contentImg = "<img class='file-extension'>";
+            $contentImg = "<img class='file-extension extensions'>";
         }
     
         // Folder or File description using Markdown
@@ -59,7 +61,7 @@ else {
             $description = "";
         } else {
             $contentReadmeMarkdown = Markdown::defaultTransform(file_get_contents($contentReadme));
-            $description = '<span class="readmore">README.md</span><span class="see-readmore">'.$contentReadmeMarkdown.'</span>';
+            $description = '<span class="readmore">README.md</span><span class="see-readmore animated">'.$contentReadmeMarkdown.'</span>';
         }
     
         // Folder or File last update
@@ -76,7 +78,7 @@ else {
                                   <a href="/'.$contentName.'" target=_blank>
                                       <div class="card-body">'.$contentImg.'</div>
                                   </a>
-                                  <div class="card-header">
+                                  <div class="card-header description">
                                     <h3><small>'.$description.'</small></h3>
                                       <div class="row">
                                           <div class="col-md-6 text-left"><p class="date">'.$lastUpdate.'</p></div>
