@@ -14,7 +14,7 @@ This **Wampindexer** project is a simple application using [Composer](https://ge
 - **Filter Repository by Type**
 - **Convert README file as HTML and use it as a description**
 - **Server informations**
-- **Responsive Design** - fully adapted for a simple navigation, exactly well presented on any screen.
+- **Responsive Design**
 
 # Author
 **Rémy Manescau | @goomies**
@@ -24,6 +24,7 @@ This **Wampindexer** project is a simple application using [Composer](https://ge
 - LinkedIn : [linkedin.com/in/remy-manescau](https://www.linkedin.com/in/remy-manescau)
 - Facebook : [facebook.com/GoomiesDev](https://www.facebook.com/GoomiesDev)
 - Twitter : [twitter.com/GoomiesDev](https://twitter.com/GoomiesDev)
+- Instagram : [instagram.com/remwithorion](https://www.instagram.com/remwithorion) 
 
 
 # Installation
@@ -35,7 +36,7 @@ This **Wampindexer** project is a simple application using [Composer](https://ge
 ### h5ai Configuration (optional)
 *[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
 
-1. Modify your `httpd.conf` file in `WanpServer` -> `Apache` -> `httpd.conf` and replace the DirectoryIndex by : `DirectoryIndex index.php index.php3 index.html index.htm /_wampindexer/public/index.php`.
+1. Modify your `httpd.conf` file in `WampServer` -> `Apache` -> `httpd.conf` and replace the DirectoryIndex by : `DirectoryIndex index.php index.php3 index.html index.htm /_wampindexer/public/index.php`.
 2. Restart **WampServer** and enjoy !
 
 # Configuration
@@ -54,10 +55,11 @@ the ` _wampindexer` folder inside your `www` folder is hidden with CSS in order 
 
 
 # Credits
-Used in this template:
+Used for this template:
 
 * [WampServer](http://www.wampserver.com/)
 * [Material Design](https://material.io/design/)
+* [jQuery](https://jquery.com/)
 * [Composer](https://getcomposer.org/)
 * [Packagist](https://packagist.org/)
 * [Symfony finder](https://packagist.org/packages/symfony/finder)
