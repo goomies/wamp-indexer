@@ -1,8 +1,6 @@
 # Wampindexer
 Minimalist [WampServer](http://www.wampserver.com) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
 
-![Wampindexer Screenshot](https://goomies.fr/wampindexer/screenshot.png)
-
 # Introduction
 This **Wampindexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **PHP packages** installable with **Composer**).
 
