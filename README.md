@@ -68,7 +68,7 @@ the ` _wampindexer` folder inside your `www` folder is hidden with CSS in order 
 - The PHP modifications are in : `_wampindexer\src\app.php`.
 
 ## Dummy content
-There is a `dummy-content` folder for the demo that you can delete, it's just here to show you the final result.
+There is a `dummy-content` folder for the demo that you can put inside your `www` folder, it's just here to show you the final result you can delete it.
 
 
 # Credits
