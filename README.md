@@ -7,7 +7,7 @@ You can find Wampindexer demo [here](https://goomies.fr/wampindexer).
 ![Wampindexer Screenshot](https://goomies.fr/wampindexer/screenshot.png)
 
 # Introduction
-This **Wampindexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **PHP packages** installable with **Composer**).
+This **Wampindexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **[PHP](https://www.php.net) packages** installable with **Composer**).
 
 # Features
 **Wampindexer** displays your repositories and files as a portfolio.
