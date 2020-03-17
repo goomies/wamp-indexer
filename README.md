@@ -46,7 +46,7 @@ Use [Composer](https://getcomposer.org/) to install Wampindexer packages : `comp
 2. Restart **WampServer** and enjoy !
 
 # Configuration
-By default, I've always named my repositories by the domains : `mydomain.com`
+By default, I've always named my website repositories : `mydomain.com`
 
 * Title - the name of your repository.
 * Thumbnail - `screenshot.png` from your repository.
