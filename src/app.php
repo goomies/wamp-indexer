@@ -6,14 +6,37 @@ require __DIR__ . '/../vendor/autoload.php';
 use Symfony\Component\Finder\Finder;
 // PHP Markdown parser
 use Michelf\Markdown;
-// Guzzle PHP HTTP client
-use GuzzleHttp\Client;
 
 // Init repositories
 $repositories = '';
 
 // Server version and virtual hostname
 $wampConfig = $_SERVER['SERVER_SIGNATURE'];
+
+// Get site 
+function isSiteAvailible($url){
+    // Check, if a valid url is provided
+    if(!filter_var($url, FILTER_VALIDATE_URL)){
+        return false;
+    }
+
+    // Initialize cURL
+    $curlInit = curl_init($url);
+    
+    // Set options
+    curl_setopt($curlInit,CURLOPT_CONNECTTIMEOUT,10);
+    curl_setopt($curlInit,CURLOPT_HEADER,true);
+    curl_setopt($curlInit,CURLOPT_NOBODY,true);
+    curl_setopt($curlInit,CURLOPT_RETURNTRANSFER,true);
+
+    // Get response
+    $response = curl_exec($curlInit);
+    
+    // Close a cURL session
+    curl_close($curlInit);
+
+    return $response?true:false;
+}
 
 // Filter files and directories inside www folder excluding the Wampindexer application using Finder
 $finder = new Finder();
@@ -35,8 +58,15 @@ else {
         // Img & Icon for repositories types
         if ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
             // Type - site
+            $checkOnline = '';
+            if(isSiteAvailible('http://'.$contentName.'/')){
+                $checkOnline = 'The website is available';      
+            }else{
+                $checkOnline = 'Woops, the site is not found'; 
+            }
             $contentIcon = "../_wampindexer/web/img/site.png";
-            $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated site-extension extensions'>";
+            $contentImg = "<img src='/".$contentName."/screenshot.png' alt='' class='animated site-extension extensions'>".$checkOnline;
+
         } 
         elseif ($extension == "email") {
             // Type - email
@@ -67,7 +97,7 @@ else {
         // Folder or File last update
         $stat = stat($contentName);
         $lastUpdate = date('d/m/Y', $stat['mtime']);
-    
+
         // Repositories
         $repositories  .= '<div class="grid col-md-4">
                             <div class="grid repository-container" id="'.$contentName.'">
