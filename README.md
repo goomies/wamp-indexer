@@ -31,15 +31,15 @@ This **Wampindexer** project is a simple application using [Composer](https://ge
 
 
 # Installation
-## Initial Configuration:
+## Initial Configuration
 1. Donwload and copy the `_wampindexer` folder inside your `www` folder.
 2. Export `index.php` present in your `_wampindexer` folder to your `www` folder.
 3. Restart **WampServer**.
 
 ## Setup project
-Use Composer to install Wampindexer packages.  `composer install` and your good to go.
+Use [Composer](https://getcomposer.org/) to install Wampindexer packages : `composer install` and your good to go.
 
-### h5ai Configuration (optional)
+## h5ai Configuration (optional)
 *[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
 
 1. Modify your `httpd.conf` file in `WampServer` -> `Apache` -> `httpd.conf` and replace the DirectoryIndex by : `DirectoryIndex index.php index.php3 index.html index.htm /_wampindexer/public/index.php`.
