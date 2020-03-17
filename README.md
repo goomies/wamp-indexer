@@ -67,6 +67,9 @@ the ` _wampindexer` folder inside your `www` folder is hidden with CSS in order 
 - The Javascript modifications are in : `_wampindexer\web\js\app.js`.
 - The PHP modifications are in : `_wampindexer\src\app.php`.
 
+## Dummy content
+There is a `dummy-content` folder for the demo that you can delete, it's just here to show you the final result.
+
 
 # Credits
 Used for this template:
