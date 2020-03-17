@@ -6,10 +6,8 @@ You can find Wampindexer demo [here](https://goomies.fr/wampindexer).
 
 ![Wampindexer Screenshot](https://goomies.fr/wampindexer/screenshot.png)
 
-# Install
+# Introduction
 This **Wampindexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **PHP packages** installable with **Composer**).
-
-Inside the project simply run `composer install` and your good to go.
 
 # Features
 **Wampindexer** displays your repositories and files as a portfolio.
@@ -37,6 +35,9 @@ Inside the project simply run `composer install` and your good to go.
 1. Donwload and copy the `_wampindexer` folder inside your `www` folder.
 2. Export `index.php` present in your `_wampindexer` folder to your `www` folder.
 3. Restart **WampServer**.
+
+## Setup project
+Use Composer to install Wampindexer packages.  `composer install` and your good to go.
 
 ### h5ai Configuration (optional)
 *[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
