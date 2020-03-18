@@ -1,10 +1,13 @@
 # Wampindexer
 Minimalist [WampServer](http://www.wampserver.com) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
 
-![Wampindexer Screenshot](https://raw.githubusercontent.com/goomies/wampindexer/master/screenshot.png)
+# Demo
+You can find Wampindexer demo [here](https://goomies.fr/wampindexer).
+
+![Wampindexer Screenshot](https://goomies.fr/wampindexer/screenshot.png)
 
 # Introduction
-This **Wampindexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **PHP packages** installable with **Composer**).
+This **Wampindexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **[PHP](https://www.php.net) packages** installable with **Composer**).
 
 # Features
 **Wampindexer** displays your repositories and files as a portfolio.
@@ -28,19 +31,30 @@ This **Wampindexer** project is a simple application using [Composer](https://ge
 
 
 # Installation
-## Initial Configuration:
+
+## WampServer
+Download and install [WampServer](http://www.wampserver.com/).
+
+## Initial Configuration
 1. Donwload and copy the `_wampindexer` folder inside your `www` folder.
 2. Export `index.php` present in your `_wampindexer` folder to your `www` folder.
 3. Restart **WampServer**.
 
-### h5ai Configuration (optional)
-*[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
+## Setup project
+Use [Composer](https://getcomposer.org/) to install Wampindexer packages : `composer install` and your good to go.
 
-1. Modify your `httpd.conf` file in `WampServer` -> `Apache` -> `httpd.conf` and replace the DirectoryIndex by : `DirectoryIndex index.php index.php3 index.html index.htm /_wampindexer/public/index.php`.
-2. Restart **WampServer** and enjoy !
+## h5ai Configuration (optional)
+*[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. See the [Demo](https://larsjung.de/h5ai/demo/).
+
+You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
+
+1. Download [h5ai](https://larsjung.de/h5ai/)
+2. Extract the content inside the `_wampindexer` folder inside your `www` folder.
+3. Modify your `httpd.conf` file in `WampServer` -> `Apache` -> `httpd.conf` and replace the DirectoryIndex by : `DirectoryIndex index.php index.php3 index.html index.htm /_wampindexer/public/index.php`.
+4. Restart **WampServer** and enjoy !
 
 # Configuration
-By default, I've always named my repositories by the domains : `mydomain.com`
+By default, I've always named my website repositories : `mydomain.com`
 
 * Title - the name of your repository.
 * Thumbnail - `screenshot.png` from your repository.
@@ -52,6 +66,9 @@ the ` _wampindexer` folder inside your `www` folder is hidden with CSS in order 
 - The style modifications are in : `_wampindexer\web\css\style.css`.
 - The Javascript modifications are in : `_wampindexer\web\js\app.js`.
 - The PHP modifications are in : `_wampindexer\src\app.php`.
+
+## Dummy content
+There is a `dummy-content` folder for the demo that you can put inside your `www` folder, it's just here to show you the final result you can delete it.
 
 
 # Credits
