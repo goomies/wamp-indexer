@@ -14,7 +14,7 @@ $repositories = '';
 $wampConfig = $_SERVER['SERVER_SIGNATURE'];
 
 // Get site 
-function isSiteAvailible($url){
+function isSiteAvailable($url){
     // Check, if a valid url is provided
     if(!filter_var($url, FILTER_VALIDATE_URL)){
         return false;
@@ -59,7 +59,7 @@ else {
         if ($extension == "fr" || $extension == "com" || $extension == "org" || $extension == "eu" || $extension == "be") {
             // Type - site
             $checkOnline = '';
-            if(isSiteAvailible('http://'.$contentName.'/')){
+            if(isSiteAvailable('http://'.$contentName.'/')){
                 $checkOnline = 'The website is available';      
             }else{
                 $checkOnline = 'Woops, the site is not found'; 
