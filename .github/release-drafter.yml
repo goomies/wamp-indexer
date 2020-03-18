@@ -13,5 +13,4 @@ exclude-labels:
 change-template: '- #$NUMBER: $TITLE by @$AUTHOR'
 template: |
   # Changes
-  
   $CHANGES
