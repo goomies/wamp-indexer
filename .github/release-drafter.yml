@@ -1,6 +1,3 @@
-template: |
-  # Changes
-  $CHANGES
 name-template: $NEXT_PATCH_VERSION
 tag-template: $NEXT_PATCH_VERSION
 branches: [test]
@@ -14,4 +11,6 @@ categories:
 exclude-labels:
   - 'dependencies'
 change-template: '- #$NUMBER: $TITLE by @$AUTHOR'
-
+template: |
+  # Changes
+  $CHANGES
