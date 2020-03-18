@@ -13,6 +13,7 @@ $repositories = '';
 // Server version and virtual hostname
 $wampConfig = $_SERVER['SERVER_SIGNATURE'];
 
+
 // Get site 
 function isSiteAvailible($url){
     // Check, if a valid url is provided
