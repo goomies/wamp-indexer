@@ -1,29 +1,29 @@
 /*--------------------------------------
     Detact Mobile Browser
 ---------------------------------------*/
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     $('html').addClass('ismobile');
 }
- 
-$(window).load(function(){
+
+$(window).load(function () {
     /* --------------------------------------------------------
         Page Loader
     ---------------------------------------------------------*/
-     if(!$('html').hasClass('ismobile')) {
-        if($('.page-loader')[0]) {
-            setTimeout (function () {
+    if (!$('html').hasClass('ismobile')) {
+        if ($('.page-loader')[0]) {
+            setTimeout(function () {
                 $('.page-loader').fadeOut();
             }, 500);
         }
     }
- 
+
     /*--------------------------------------
         Welcome Message
     ---------------------------------------*/
-    function notify(message, type){
+    function notify(message, type) {
         $.growl({
             message: message
-        },{
+        }, {
             type: type,
             allow_dismiss: false,
             label: 'Cancel',
@@ -34,8 +34,8 @@ $(window).load(function(){
             },
             delay: 2500,
             animate: {
-                    enter: 'animated fadeInRight',
-                    exit: 'animated fadeOutRight'
+                enter: 'animated fadeInRight',
+                exit: 'animated fadeOutRight'
             },
             offset: {
                 x: 30,
@@ -43,20 +43,20 @@ $(window).load(function(){
             }
         });
     };
- 
+
     if (!$('.login-content')[0]) {
         notify('On your localhost MAMENE !', 'inverse');
     }
 });
- 
-$(document).ready(function() {
+
+$(document).ready(function () {
     /*--------------------------------------
         Display Number of Projects
     ---------------------------------------*/
     $("#_wampindexer").removeClass("grid");
-    var nbProjet = $('.repository-container').length +" "+"Repositories";
+    var nbProjet = $('.repository-container').length + " " + "Repositories";
     $(".nbProjet").append(nbProjet);
- 
+
     /*--------------------------------------
         Clear Header Search Bar
     ---------------------------------------*/
@@ -64,7 +64,7 @@ $(document).ready(function() {
         e.preventDefault();
         var action = $(this).data('ma-action');
         var $this = $(this);
- 
+
         switch (action) {
             /* Clear Search */
             case 'search-clear':
@@ -81,17 +81,17 @@ $(document).ready(function() {
                 break;
         }
     });
- 
+
     /* --------------------------------------------------------
         Reset Icon Search Bar
     ----------------------------------------------------------*/
     /* Bring search reset icon when focused */
-    $('body').on('focus', '.hs-input', function(){
+    $('body').on('focus', '.hs-input', function () {
         $('.h-search').addClass('focused');
     });
- 
+
     /* Take off reset icon if input length is 0, when blurred */
-    $('body').on('blur', '.hs-input', function(){
+    $('body').on('blur', '.hs-input', function () {
         var x = $(this).val();
 
         if (!x.length > 0) {
@@ -102,7 +102,7 @@ $(document).ready(function() {
     /*--------------------------------------
         Search Bar Functionalities & Reset
     ---------------------------------------*/
-    $( "#myInput" ).keyup(function() {
+    $("#myInput").keyup(function () {
         var input, filter, container, titre, h2, span, i;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
@@ -122,16 +122,16 @@ $(document).ready(function() {
             }
 
             /* Reset number of projects */
-            var nbProjet = $('.grid.col-md-4:not([style*="display: none"])').length+" "+"Repositories";
+            var nbProjet = $('.grid.col-md-4:not([style*="display: none"])').length + " " + "Repositories";
             $(".nbProjet").empty();
             $(".nbProjet").append(nbProjet);
 
             /* Icon reset search */
-            $("i.hs-reset").click(function(){
+            $("i.hs-reset").click(function () {
                 $(".grid").css('display', 'block');
 
                 /* Reset number of projects */
-                var nbProjet = $('.grid.col-md-4:not([style*="display: none"])').length+" "+"Repositories";
+                var nbProjet = $('.grid.col-md-4:not([style*="display: none"])').length + " " + "Repositories";
                 $(".nbProjet").empty();
                 $(".nbProjet").append(nbProjet);
             });
@@ -141,9 +141,9 @@ $(document).ready(function() {
     /*--------------------------------------
         Filter Type Projects
     ---------------------------------------*/
-    $(".filter").click(function(e) {
+    $(".filter").click(function (e) {
         e.preventDefault();
-        
+
         /* Set types */
         projects = $(".repository-extension").parents().closest(".grid.col-md-4");
         files = $(".file-extension").parents().closest(".grid.col-md-4");
@@ -153,36 +153,36 @@ $(document).ready(function() {
         /* Display types when filter */
         filter = this.className;
         $(".grid.col-md-4").hide();
-        $(".grid.col-md-4").removeClass("animated fadeIn"); 
+        $(".grid.col-md-4").removeClass("animated fadeIn");
 
         if (filter == "filter all") {
             $(".grid.col-md-4").show();
             /* Reset number of projects */
-            var nbProjet = $('.repository-container').length +" "+"Repositories";
-            $(".grid.col-md-4").addClass("animated fadeIn"); 
+            var nbProjet = $('.repository-container').length + " " + "Repositories";
+            $(".grid.col-md-4").addClass("animated fadeIn");
         }
         if (filter == "filter folders") {
             projects.show();
             /* Reset number of folders */
-            var nbProjet = projects.length +" "+"Projects";
-            projects.addClass("animated fadeIn"); 
+            var nbProjet = projects.length + " " + "Projects";
+            projects.addClass("animated fadeIn");
         }
         if (filter == "filter files") {
             files.show();
             /* Reset number of files */
-            var nbProjet = files.length +" "+"Files";
+            var nbProjet = files.length + " " + "Files";
             files.addClass("animated fadeIn");
         }
         if (filter == "filter sites") {
             sites.show();
             /* Reset number of sites */
-            var nbProjet = sites.length +" "+"Sites";
+            var nbProjet = sites.length + " " + "Sites";
             sites.addClass("animated fadeIn");
         }
         if (filter == "filter emails") {
             emails.show();
             /* Reset number of emails */
-            var nbProjet = emails.length +" "+"Emails";
+            var nbProjet = emails.length + " " + "Emails";
             emails.addClass("animated fadeIn");
         }
 
@@ -196,29 +196,40 @@ $(document).ready(function() {
     ---------------------------------------*/
     $(".see-readmore").hide();
 
-    $(".readmore").click(function() {
+    $(".readmore").click(function () {
         $(this).toggleClass("clicked");
         $(this).next().toggle("slow");
-        $(this).next().toggleClass("bounceInDown"); 
+        $(this).next().toggleClass("bounceInDown");
     });
- 
+
     /*--------------------------------------
          Animation
     ---------------------------------------*/
     $(".card.animation-demo").hover(
-        function() {
+        function () {
             $(this).find(".animated.extensions").addClass("pulse");
-        }, function() {
+        }, function () {
             $(this).find(".animated.extensions").removeClass("pulse");
         }
     );
 
     /*----------------------------------------
-        Apparence grid
+        Is Site Available
     -----------------------------------------*/
-    // var divs = $("div.myGrid > div.grid");
-    // var projetPerColm = nbProjet/3;
-    // for (var i = 0; i < divs.length; i+=projetPerColm) {
-    //     divs.slice(i, i+projetPerColm).wrapAll("<div class='grid col-md-4'></div>");
-    // }
- });
+    jQuery.ajax({
+        type: "POST",
+        url: 'http://localhost/index.php',
+        dataType: 'json',
+        data: { functionname: 'add', arguments: [1, 2] },
+
+        success: function (obj, textstatus) {
+            if (!('error' in obj)) {
+                yourVariable = obj.result;
+            }
+            else {
+                console.log(obj.error);
+            }
+        }
+    });
+
+});
