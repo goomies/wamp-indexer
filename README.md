@@ -2,9 +2,9 @@
 Minimalist [WampServer](http://www.wampserver.com) & [MAMP](https://www.mamp.info/en/mac) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
 
 # Demo
-You can find my Indexer demo [here](https://wwww.remymanescau.com/indexer).
+You can find my Indexer demo [here](https://indexer.remymanescau.com).
 
-![Indexer Screenshot](https://www.remymanescau.com/indexer/screenshot.png)
+![Indexer Screenshot](https://indexer.remymanescau.com/screenshot.png)
 
 # Introduction
 This **Indexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **[PHP](https://www.php.net) packages** installable with **Composer**).
