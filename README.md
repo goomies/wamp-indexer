@@ -68,7 +68,6 @@ There is a `dummy-content` folder for the demo that you can put inside your `www
 *[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. See the [Demo](https://larsjung.de/h5ai/demo/).
 
 You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
-[Download h5ai](https://larsjung.de/h5ai/)
 
 
 # Credits
@@ -83,4 +82,3 @@ Used for this template:
 * [Symfony finder](https://packagist.org/packages/symfony/finder)
 * [Michelf php-markdown](https://packagist.org/packages/michelf/php-markdown)
 * [Guzzle HTTP PHP](https://packagist.org/packages/guzzlehttp/guzzle)
-* [h5ai](https://larsjung.de/h5ai/)
