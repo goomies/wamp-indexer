@@ -1,16 +1,16 @@
-# Wampindexer
-Minimalist [WampServer](http://www.wampserver.com) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
+# Indexer
+Minimalist [WampServer](http://www.wampserver.com) & [MAMP](https://www.mamp.info/en/mac) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
 
 # Demo
-You can find Wampindexer demo [here](https://goomies.fr/wampindexer).
+You can find my Indexer demo [here](https://wwww.remymanescau.com/indexer).
 
-![Wampindexer Screenshot](https://goomies.fr/wampindexer/screenshot.png)
+![Indexer Screenshot](https://www.remymanescau.com/indexer/screenshot.png)
 
 # Introduction
-This **Wampindexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **[PHP](https://www.php.net) packages** installable with **Composer**).
+This **Indexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **[PHP](https://www.php.net) packages** installable with **Composer**).
 
 # Features
-**Wampindexer** displays your repositories and files as a portfolio.
+**Indexer** displays your repositories and files as a portfolio.
 
 - **Repository Count**
 - **Search Repository by Name**
@@ -22,6 +22,7 @@ This **Wampindexer** project is a simple application using [Composer](https://ge
 # Author
 **Rémy Manescau | @goomies**
 
+- Site : [remymanescau.com](https://www.remymanescau.com)
 - GitHub : [github.com/goomies](https://github.com/goomies)
 - GitLab : [gitlab.com/goomies](https://gitlab.com/goomies)
 - LinkedIn : [linkedin.com/in/remy-manescau](https://www.linkedin.com/in/remy-manescau)
@@ -33,23 +34,26 @@ This **Wampindexer** project is a simple application using [Composer](https://ge
 # Installation
 
 ## WampServer
-Download and install [WampServer](http://www.wampserver.com/).
+Download and install [WampServer](http://www.wampserver.com/)
+
+## MAMP
+Download and install [MAMP](https://www.mamp.info/en/mac)
 
 ## Initial Configuration
-1. Donwload and copy the `_wampindexer` folder inside your `www` folder.
-2. Export `index.php` present in your `_wampindexer` folder to your `www` folder.
-3. Restart **WampServer**.
+1. Donwload and copy the `indexer` folder inside your `www` or `htdocs` folder.
+2. Export `index.php` present in your `indexer` folder to your `www` or `htdocs` folder.
+3. Restart **WampServer** or **MAMP**.
 
 ## Setup project
-Use [Composer](https://getcomposer.org/) to install Wampindexer packages : `composer install` and your good to go.
+Use [Composer](https://getcomposer.org/) to install Indexer packages : `composer install`.
 
-## h5ai Configuration (optional)
+## h5ai Configuration (optional only for WanpServer)
 *[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. See the [Demo](https://larsjung.de/h5ai/demo/).
 
 You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
 
 1. Download [h5ai](https://larsjung.de/h5ai/)
-2. Extract the content inside the `_wampindexer` folder inside your `www` folder.
+2. Extract the content inside the `indexer` folder.
 3. Modify your `httpd.conf` file in `WampServer` -> `Apache` -> `httpd.conf` and replace the DirectoryIndex by : `DirectoryIndex index.php index.php3 index.html index.htm /_wampindexer/public/index.php`.
 4. Restart **WampServer** and enjoy !
 
@@ -61,20 +65,21 @@ By default, I've always named my website repositories : `mydomain.com`
 * Description - `README.md` from your repository.
 
 ## Default setup
-the ` _wampindexer` folder inside your `www` folder is hidden with CSS in order to not be count and displayed as a repository.
-- You can change your profile picture here : `_wampindexer\web\img\profile.png`.
-- The style modifications are in : `_wampindexer\web\css\style.css`.
-- The Javascript modifications are in : `_wampindexer\web\js\app.js`.
-- The PHP modifications are in : `_wampindexer\src\app.php`.
+the `indexer` folder inside your `www` or `htdocs` folder is hidden with CSS in order to not be count and displayed as a repository.
+- You can change your profile picture here : `indexer\web\img\profile.png`.
+- The style modifications are in : `indexer\web\css\style.css`.
+- The Javascript modifications are in : `indexer\web\js\app.js`.
+- The PHP modifications are in : `indexer\src\app.php`.
 
 ## Dummy content
-There is a `dummy-content` folder for the demo that you can put inside your `www` folder, it's just here to show you the final result you can delete it.
+There is a `dummy-content` folder for the demo that you can put inside your `www` or `htdocs` folder, it's just here to show you the final result but you can delete it.
 
 
 # Credits
 Used for this template:
 
 * [WampServer](http://www.wampserver.com/)
+* [MAMP](https://www.mamp.info/en/mac)
 * [Material Design](https://material.io/design/)
 * [jQuery](https://jquery.com/)
 * [Composer](https://getcomposer.org/)
