@@ -47,16 +47,6 @@ Download and install [MAMP](https://www.mamp.info/en/mac)
 ## Setup project
 Use [Composer](https://getcomposer.org/) to install Indexer packages : `composer install`.
 
-## h5ai Configuration (optional only for WanpServer)
-*[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. See the [Demo](https://larsjung.de/h5ai/demo/).
-
-You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
-
-1. Download [h5ai](https://larsjung.de/h5ai/)
-2. Extract the content inside the `indexer` folder.
-3. Modify your `httpd.conf` file in `WampServer` -> `Apache` -> `httpd.conf` and replace the DirectoryIndex by : `DirectoryIndex index.php index.php3 index.html index.htm /_wampindexer/public/index.php`.
-4. Restart **WampServer** and enjoy !
-
 # Configuration
 By default, I've always named my website repositories : `mydomain.com`
 
@@ -73,6 +63,12 @@ the `indexer` folder inside your `www` or `htdocs` folder is hidden with CSS in 
 
 ## Dummy content
 There is a `dummy-content` folder for the demo that you can put inside your `www` or `htdocs` folder, it's just here to show you the final result but you can delete it.
+
+## h5ai Configuration (optional)
+*[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. See the [Demo](https://larsjung.de/h5ai/demo/).
+
+You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
+[Download h5ai](https://larsjung.de/h5ai/)
 
 
 # Credits
