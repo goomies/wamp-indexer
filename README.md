@@ -33,11 +33,7 @@ This **Indexer** project is a simple application using [Composer](https://getcom
 
 # Installation
 
-## WampServer
-Download and install [WampServer](http://www.wampserver.com/)
-
-## MAMP
-Download and install [MAMP](https://www.mamp.info/en/mac)
+Download and install [WampServer](http://www.wampserver.com/) or [MAMP](https://www.mamp.info/en/mac).
 
 ## Initial Configuration
 1. Donwload and copy the `indexer` folder inside your `www` or `htdocs` folder.
@@ -68,7 +64,6 @@ There is a `dummy-content` folder for the demo that you can put inside your `www
 *[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. See the [Demo](https://larsjung.de/h5ai/demo/).
 
 You can use **h5ai** in this template if you dont have any `index.html` or `index.php` in your directories.
-
 
 # Credits
 Used for this template:
