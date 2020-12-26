@@ -1,4 +1,4 @@
-# Indexer
+# Wamp Indexer
 Minimalist [WampServer](http://www.wampserver.com) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
 
 # Demo
