@@ -1,5 +1,5 @@
 # Indexer
-Minimalist [WampServer](http://www.wampserver.com) & [MAMP](https://www.mamp.info/en/mac) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
+Minimalist [WampServer](http://www.wampserver.com) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
 
 # Demo
 You can find my Indexer demo [here](https://indexer.remymanescau.com).
@@ -33,12 +33,12 @@ This **Indexer** project is a simple application using [Composer](https://getcom
 
 # Installation
 
-Download and install [WampServer](http://www.wampserver.com/) or [MAMP](https://www.mamp.info/en/mac).
+Download and install [WampServer](http://www.wampserver.com/).
 
 ## Initial Configuration
-1. Donwload and copy the `indexer` folder inside your `www` or `htdocs` folder.
-2. Export `index.php` present in your `indexer` folder to your `www` or `htdocs` folder.
-3. Restart **WampServer** or **MAMP**.
+1. Donwload and copy the `indexer` folder inside your `www` folder.
+2. Export `index.php` present in your `indexer` folder to your `www` folder.
+3. Restart **WampServer**.
 
 ## Setup project
 Use [Composer](https://getcomposer.org/) to install Indexer packages : `composer install`.
@@ -51,14 +51,14 @@ By default, I've always named my website repositories : `mydomain.com`
 * Description - `README.md` from your repository.
 
 ## Default setup
-the `indexer` folder inside your `www` or `htdocs` folder is hidden with CSS in order to not be count and displayed as a repository.
+The `indexer` folder inside your `www` folder is hidden with CSS in order to not be count and displayed as a repository.
 - You can change your profile picture here : `indexer\web\img\profile.png`.
 - The style modifications are in : `indexer\web\css\style.css`.
 - The Javascript modifications are in : `indexer\web\js\app.js`.
 - The PHP modifications are in : `indexer\src\app.php`.
 
 ## Dummy content
-There is a `dummy-content` folder for the demo that you can put inside your `www` or `htdocs` folder, it's just here to show you the final result but you can delete it.
+There is a `dummy-content` folder for the demo that you can put inside your `www` folder, it's just here to show you the final result but you can delete it.
 
 ## h5ai Configuration (optional)
 *[h5ai](https://larsjung.de/h5ai/) is a modern **file indexer** for **HTTP web servers** with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. See the [Demo](https://larsjung.de/h5ai/demo/).
