@@ -1,4 +1,4 @@
-# Wamp Indexer
+# Wamp Enhanced 
 Minimalist [WampServer](http://www.wampserver.com) template based on [Material Design](https://material.io/design). Designed for simple navigation, with detailed projects.
 
 # Features
@@ -21,7 +21,7 @@ Download and install [WampServer](http://www.wampserver.com/).
 3. Restart **WampServer**.
 
 ## Setup project
-Use [Composer](https://getcomposer.org/) to install Indexer packages : `composer install`.
+Use [Composer](https://getcomposer.org/) to install packages : `composer install`.
 
 # Configuration
 By default, I've always named my website repositories : `mydomain.com`
