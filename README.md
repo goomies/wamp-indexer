@@ -1,16 +1,8 @@
 # Wamp Indexer
-Minimalist [WampServer](http://www.wampserver.com) template that works great on any screen based on [Material Design](https://material.io/design). Perfectly designed for simple navigation, with detailed projects.
-
-# Demo
-You can find my Indexer demo [here](https://indexer.remymanescau.com).
-
-![Indexer Screenshot](https://indexer.remymanescau.com/screenshot.png)
-
-# Introduction
-This **Indexer** project is a simple application using [Composer](https://getcomposer.org), and [Packagist](https://packagist.org) (the main **Composer** repository, that aggregates public **[PHP](https://www.php.net) packages** installable with **Composer**).
+Minimalist [WampServer](http://www.wampserver.com) template based on [Material Design](https://material.io/design). Designed for simple navigation, with detailed projects.
 
 # Features
-**Indexer** displays your repositories and files as a portfolio.
+Displays your repositories and files as a portfolio.
 
 - **Repository Count**
 - **Search Repository by Name**
@@ -18,18 +10,6 @@ This **Indexer** project is a simple application using [Composer](https://getcom
 - **Convert README file as HTML and use it as a description**
 - **Server informations**
 - **Responsive Design**
-
-# Author
-**Rémy Manescau | @goomies**
-
-- Site : [remymanescau.com](https://www.remymanescau.com)
-- GitHub : [github.com/goomies](https://github.com/goomies)
-- GitLab : [gitlab.com/goomies](https://gitlab.com/goomies)
-- LinkedIn : [linkedin.com/in/remy-manescau](https://www.linkedin.com/in/remy-manescau)
-- Facebook : [facebook.com/GoomiesDev](https://www.facebook.com/GoomiesDev)
-- Twitter : [twitter.com/GoomiesDev](https://twitter.com/GoomiesDev)
-- Instagram : [instagram.com/remwithorion](https://www.instagram.com/remwithorion) 
-
 
 # Installation
 
