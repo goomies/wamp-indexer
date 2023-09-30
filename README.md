@@ -1,5 +1,5 @@
-# Wamp Enhanced 
-Minimalist [WampServer](http://www.wampserver.com) template based on [Material Design](https://material.io/design). Designed for simple navigation, with detailed projects.
+# Wamp Indexer 
+Minimalist **WampServer** template with simple navigation and detailed projects based on **Material Design**. 
 
 # Features
 Displays your repositories and files as a portfolio.
@@ -13,15 +13,11 @@ Displays your repositories and files as a portfolio.
 
 # Installation
 
-Download and install [WampServer](http://www.wampserver.com/).
-
-## Initial Configuration
-1. Donwload and copy the `indexer` folder inside your `www` folder.
-2. Export `index.php` present in your `indexer` folder to your `www` folder.
-3. Restart **WampServer**.
-
-## Setup project
-Use [Composer](https://getcomposer.org/) to install packages : `composer install`.
+1. Download and install [WampServer](http://www.wampserver.com/).
+2. Donwload and copy the `indexer` folder inside your `www` folder.
+3. Export `index.php` present in your `indexer` folder to your `www` folder.
+4. Use [Composer](https://getcomposer.org/) to install packages : `composer install`.
+5. Restart **WampServer**.
 
 # Configuration
 By default, I've always named my website repositories : `mydomain.com`
